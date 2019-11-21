@@ -1,5 +1,5 @@
 #Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
-
+#brute force
 def avg_of_subarrays(K, arr):
     result= []
     for i in range(len(arr)-K+1):
