@@ -1,3 +1,21 @@
+#leetcode 349. Intersection of Two Arrays
+
+#solution1
+
+class Solution:
+    def intersection(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        nums1 = set(nums1)
+        nums2 = set(nums2)
+        return list(nums1 & nums2)
+
+
+
+#solution2
 class Solution:
     def intersection(self, nums1, nums2):
         """
@@ -21,5 +39,3 @@ class Solution:
                     listi.append(nums2[j])
 
         return listi
-
-
