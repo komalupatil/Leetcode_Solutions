@@ -1,4 +1,4 @@
-#Problem7
+#Problem7 from 30 day leetcoding challenge - new problem introduced by leetcode 
 #Given an integer array arr, count element x such that x + 1 is also in arr.
 #If there're duplicates in arr, count them seperately.
 #Example 1:
