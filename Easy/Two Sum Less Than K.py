@@ -1,3 +1,7 @@
+#Leetcode 1099. Two Sum Less Than K
+
+#Solution - using two pointers
+
 class Solution:
     def twoSumLessThanK(self, nums, k):
         maximum = -1
@@ -6,9 +10,7 @@ class Solution:
         nums = sorted(nums)
         
         while (l < r):
-            if nums[l] + nums[r] == k:
-                return k
-            elif (nums[l] + nums[r]) > k:
+            if (nums[l] + nums[r]) >= k:
                 r -=1
             else:
                 maximum = max(maximum, nums[l]+nums[r])
