@@ -63,3 +63,31 @@ class Solution:
                 stack.append(last.right)
                 
         return root
+
+
+#SOlution3 - recursive without ocnverting to inorder
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    index = 0
+    
+    def bstFromPreorder(self, preorder: List[int]) -> TreeNode:
+        if len(preorder) == 0:
+            return None
+        
+        return self.helper(preorder,bound=float('inf'))
+            
+    def helper(self, A, bound=float('inf')):
+        if self.index == len(A) or A[self.index] > bound:
+            return None
+        root = TreeNode(A[self.index])
+        self.index += 1
+        root.left = self.helper(A, root.val)
+        root.right = self.helper(A, bound)
+        return root
