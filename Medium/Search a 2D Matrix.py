@@ -1,5 +1,13 @@
 #Leetcode 74 Search a 2D matrix
-#how to find midElement is imp here, remember the example of finding the position of 11th person if have to arrange 10 ppl in a row of 4s
+
+#Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
+
+#Integers in each row are sorted in ascending from left to right.
+#Integers in each column are sorted in ascending from top to bottom.
+
+#how to find midElement is imp here, 
+#remember the example of finding the position of 11th person if have to arrange 10 ppl in a row of 4s
+
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         if len(matrix) == 0:
@@ -16,7 +24,7 @@ class Solution:
             if (midElement == target):
                 return True
             elif midElement > target:
-                right -= 1
+                right = mid - 1
             else: 
-                left += 1
+                left = mid + 1
         return False
