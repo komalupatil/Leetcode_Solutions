@@ -1,4 +1,4 @@
-#leetcode66 plus one
+#leetcode 66. plus one
 
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:

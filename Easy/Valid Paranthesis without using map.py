@@ -1,4 +1,6 @@
-#leetcode 20
+#Leetcode 20. Valid Parentheses
+
+#Solution1 
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
@@ -16,3 +18,23 @@ class Solution:
             return False
         else:
             return True
+
+#Solution2
+class Solution:
+    def isValid(self, s: str) -> bool:
+        d = {'(':')', '[':']', '{':'}'}
+        stack = []
+        open_para = set('([{')
+
+        for bracket in s:
+            if bracket in open_para:
+                stack.append(bracket)
+            else:
+                if len(stack) == 0:
+                    return False
+                last_open = stack.pop()
+                if d[last_open] is not bracket:
+                    return False
+        return len(stack) ==  0
+
+
