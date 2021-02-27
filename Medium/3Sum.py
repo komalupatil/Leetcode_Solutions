@@ -1,4 +1,4 @@
-#leetcode 15
+#leetcode 15. 3Sum
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
