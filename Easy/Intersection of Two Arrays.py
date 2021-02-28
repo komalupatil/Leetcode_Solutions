@@ -39,3 +39,21 @@ class Solution:
                     listi.append(nums2[j])
 
         return listi
+
+    
+#Solution3
+
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        
+        result = []
+        d = {}
+        
+        for i in nums1:
+            d[i] = d.get(i,0)+1
+        for j in nums2:
+            if j in d and d[j] >0:
+                result.append(j)
+                d[j] = 0
+        return result
+
