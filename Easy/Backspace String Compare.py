@@ -1,6 +1,22 @@
 #Leetcode 844. Backspace String Compare
 
-#Solution
+#Solution1
+
+class Solution:
+    def backspaceCompare(self, S: str, T: str) -> bool:
+        def bsString(string):
+            result = []
+            
+            for c in string:
+                if c != "#":
+                    result.append(c)
+                else:
+                    result = result[:-1]
+            return result
+        return bsString(S) == bsString(T)
+
+
+#Solution2
 
 class Solution:
     def backspaceCompare(self, S: str, T: str) -> bool:

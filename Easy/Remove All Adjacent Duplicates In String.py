@@ -26,3 +26,19 @@ class Solution:
             else:
                 dout.append(s)
         return "".join(dout)
+
+#Solution 3
+
+class Solution:
+    def removeDuplicates(self, S: str) -> str:
+        res = []
+        
+        for i in S:
+            if not res:
+                res.append(i)
+            else:
+                if res[-1] == i:
+                    del res[-1]
+                else:
+                    res.append(i)
+        return "".join(res)

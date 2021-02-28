@@ -1,43 +1,97 @@
+#Leetcode 225. Implement Stack using Queues
+
+#Solution 1
+
+from collections import deque
 class MyStack:
 
     def __init__(self):
         """
         Initialize your data structure here.
         """
-        stack = []
-        self.stack = stack
+        self.queue = deque()
+        
 
-    def push(self, x):
+    def push(self, x: int) -> None:
         """
         Push element x onto stack.
-        :type x: int
-        :rtype: void
         """
-        self.stack.append(x)
+        self.queue.append(x)
+        for _ in range(len(self.queue)-1):
+            self.queue.append(self.queue.popleft())
+        
 
-    def pop(self):
+    def pop(self) -> int:
         """
         Removes the element on top of the stack and returns that element.
-        :rtype: int
         """
-        return self.stack.pop()
+        return self.queue.popleft()
+        
 
-    def top(self):
+    def top(self) -> int:
         """
         Get the top element.
-        :rtype: int
         """
-        return self.stack[-1]
+        return self.queue[0]
+        
 
-    def empty(self):
+    def empty(self) -> bool:
         """
         Returns whether the stack is empty.
-        :rtype: bool
         """
-        if len(self.stack) == 0:
-            return True
-        else:
-            return False
+        return not self.queue
+        
+
+
+# Your MyStack object will be instantiated and called as such:
+# obj = MyStack()
+# obj.push(x)
+# param_2 = obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.empty()
+
+#Solution 2
+
+from collections import deque
+class MyStack:
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.q = deque()
+        
+
+    def push(self, x: int) -> None:
+        """
+        Push element x onto stack.
+        """
+        tmp = deque([x])
+        tmp.extend(self.q)
+        self.q = tmp
+        
+
+    def pop(self) -> int:
+        """
+        Removes the element on top of the stack and returns that element.
+        """
+        return self.q.popleft()
+        
+
+    def top(self) -> int:
+        """
+        Get the top element.
+        """
+        return self.q[0]
+        
+
+    def empty(self) -> bool:
+        """
+        Returns whether the stack is empty.
+        """
+        return len(self.q) == 0
+        
+
 
 # Your MyStack object will be instantiated and called as such:
 # obj = MyStack()
