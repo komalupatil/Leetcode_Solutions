@@ -24,7 +24,6 @@ class solution:
             d[rightChar] = d.get(rightChar, 0) + 1
 
             while len(d) > k:
-                maxWindow = str[windowStart:windowStart+windowEnd+1]
                 d[str[windowStart]] -= 1
                 if d[str[windowStart]] == 0:
                     del d[str[windowStart]]
@@ -38,7 +37,7 @@ class solution:
         return maxWindow
 
 out = solution()
-str1 = "2abcbdbdbbdcdabd"
+str1 = "3abcbdbdbbdcdabd"
 out1 = out.kUniqueCharacters(str1)
 print(out1)
 
