@@ -1,3 +1,4 @@
+#coderbyte medium
 #determine if an array of integer pairs can form a binary tree properly
 #There is one root node, and every child node has parent
 #Example: Input: ["(1,2)", "(2,4)", "(5,7)", "(7,2)", "(9,5)"]
@@ -24,6 +25,7 @@ class Solution:
             else:
                 parents[parent] = [child]
 
+            #check if each parent has at most 2 child nodes
             if len(parents[parent]) > 2:
                 return False
             
@@ -32,13 +34,22 @@ class Solution:
             else:
                 children[child] = parent
             
+            root_count = 0
+            if parent not in children.keys():
+                root_count +=1
+            else:
+                root_count = 0
+            if root_count > 1:
+                return False
+
         return True
 
 out = Solution()
+
 strArr1 = ["(1,2)", "(2,4)", "(5,7)", "(7,2)", "(9,5)"]
 strArr2 = ["(1,2)", "(3,2)", "(2,12)", "(5,2)"]
 
-out1 = out.TreeConstructor(strArr1)
-print(out1)
-out2 = out.TreeConstructor(strArr2)
-print(out2)
+output1 = out.TreeConstructor(strArr1)
+print(output1)
+output2 = out.TreeConstructor(strArr2)
+print(output2)

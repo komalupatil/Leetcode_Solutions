@@ -1,3 +1,4 @@
+#CoderByte medium
 #Find the longest substring of a string containing `k` distinct characters
 #string = "3abcbdbdbbdcdabd" where string[0] is k
 #For k = 2, o/p is ‘bdbdbbd’
@@ -5,7 +6,7 @@
 
 
 #Pattern : Sliding Window
-class solution:
+class Solution:
     def kUniqueCharacters(self, str):
         if len(str) == 0 or str == None:
             return 0
@@ -36,10 +37,10 @@ class solution:
         maxWindow = str[maxWindowStart:maxWindowStart+maxLength]
         return maxWindow
 
-out = solution()
+out = Solution()
 str1 = "3abcbdbdbbdcdabd"
-out1 = out.kUniqueCharacters(str1)
-print(out1)
+output1 = out.kUniqueCharacters(str1)
+print(output1)
 
 
 
