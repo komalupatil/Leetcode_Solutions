@@ -1,4 +1,5 @@
-#leetcode26
+#Leetcode 26. Remove Duplicates from Sorted Array 
+
 class removeduplicates:
     def rem_dup(self, nums):
         slow = 0 #slow pointer
@@ -10,6 +11,8 @@ class removeduplicates:
             else:
                 fast +=1
         return slow+1 #takes only the length of actual non duplicate numbers
+
+
 nums1 = [0,0,1,1,1,2,2,3,3,4]
 removeDuplicates = removeduplicates()
 result = removeDuplicates.rem_dup(nums1)
