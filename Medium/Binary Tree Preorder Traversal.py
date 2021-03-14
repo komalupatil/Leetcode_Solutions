@@ -16,8 +16,7 @@ class Solution:
         return output
         
     def preorder(self, root, output):
-        if root: 
-            
+        if root:   
             output.append(root.val)
             self.preorder(root.left, output)
             self.preorder(root.right, output)
