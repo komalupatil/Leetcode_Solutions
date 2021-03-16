@@ -25,6 +25,43 @@ class Solution:
         
         left, right = binarySearchLeft(nums, target), binarySearchRight(nums, target)
         return (left, right) if left <= right else [-1, -1]
+        
+#Solution - follow (https://leetcode.com/discuss/general-discussion/1089533/An-approach-to-writing-bug-free-Binary-Search-code)
             
-            
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        
+        def findFirst(nums, target):
+            l = 0
+            h = len(nums)-1
+            ans = -1
+            while l<=h:
+                mid = l+ (h-l)//2
+                if nums[mid] == target:
+                    ans = mid
+                    h = mid - 1
+                elif nums[mid] > target:
+                    h = mid - 1
+                else:
+                    l = mid + 1
+            return ans
+        def findLast(nums, target):
+            l = 0
+            h = len(nums)-1
+            ans = -1
+            while l<=h:
+                mid = l + (h-l)//2
+                if nums[mid] == target:
+                    ans = mid
+                    l = mid + 1
+                elif nums[mid] < target:
+                    l = mid + 1
+                else:
+                    h = mid - 1
+            return ans
+        
+        result = [-1, -1]
+        result[0] = findFirst(nums, target)
+        result[1] = findLast(nums, target)
+        return result
         
