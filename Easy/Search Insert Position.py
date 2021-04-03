@@ -7,7 +7,7 @@ class Solution:
         r = len(nums) -1
         
         while l<=r:
-            mid = (r+l)//2
+            mid = l + (r-l)//2
             if target < nums[mid]:
                 r = mid -1
             elif target >nums[mid]:

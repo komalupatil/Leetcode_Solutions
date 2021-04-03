@@ -13,7 +13,6 @@ class Solution:
             for j in range(i+1,len(nums)):
                 if (nums[i])+nums[j] == target:
                     return (i, j)
-                    break
 
 
 #solution2
@@ -40,15 +39,3 @@ class Solution:
             else:
                 d[nums[i]] = i
 
-
-#solution4
-
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        d = {}
-        for i in range(len(nums)):
-            x= target - nums[i]
-            if x in d:
-                return (d[x], i)
-            else:
-                d[nums[i]] = i
