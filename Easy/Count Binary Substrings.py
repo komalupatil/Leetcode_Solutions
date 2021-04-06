@@ -14,3 +14,21 @@ class Solution:
                 prev = cur
                 cur = 1
         return res + min(cur, prev)
+
+
+#Solution2
+
+class Solution:
+    def countBinarySubstrings(self, s: str) -> int:
+        groups = [1]
+        
+        for i in range(1, len(s)):
+            if s[i] != s[i-1]:
+                groups.append(1)
+            else:
+                groups[-1] +=1
+        ans = 0
+        for i in range(1, len(groups)):
+            ans += min(groups[i-1], groups[i])
+        
+        return ans
