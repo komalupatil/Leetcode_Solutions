@@ -1,3 +1,6 @@
+#Leetcode 389. Find the Difference
+
+#Solution1
 class Solution:
     def findTheDifference(self, s, t):
         """
@@ -19,3 +22,13 @@ class Solution:
         for k,v in dicti.items():
             if v != 0:
                 return k
+
+#Solution2 - using xor, xor of num with itself is 0 and xor of num with 0 is num.
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        ans = 0
+        for letter in s:
+            ans ^= ord(letter)
+        for letter in t:
+            ans ^= ord(letter)
+        return chr(ans)
