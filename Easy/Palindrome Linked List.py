@@ -1,6 +1,6 @@
 #Leetcode 234. Palindrome Linked List
 
-#Topic: Two Pointers
+#Topic: Two Pointers, combine reverse and middle of linked list
 
 #Solution
 
