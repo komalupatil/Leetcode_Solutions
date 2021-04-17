@@ -26,3 +26,31 @@ class Solution:
 
 #Solution - BFS recursive
 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+from collections import deque
+class Solution:
+    def sumOfLeftLeaves(self, root: TreeNode) -> int:
+        if root == None:
+            return 0
+        
+        queue = deque()
+        
+        queue.append(root)
+        
+        result = 0
+        
+        while queue:
+            currentNode = queue.popleft()
+            if currentNode.left:
+                queue.append(currentNode.left)
+                if not currentNode.left.left and not currentNode.left.right:
+                    result += currentNode.left.val
+            if currentNode.right:
+                queue.append(currentNode.right)
+        return result
+        
