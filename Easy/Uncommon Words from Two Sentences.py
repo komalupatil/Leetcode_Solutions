@@ -1,3 +1,6 @@
+#Leetcode 884. Uncommon Words from Two Sentences
+
+#Solution1
 class Solution:
     def uncommonFromSentences(self, A, B):
         """
@@ -18,3 +21,16 @@ class Solution:
             if v == 1:
                 listi.append(k)
         return listi
+
+#Solution2
+
+class Solution:
+    def uncommonFromSentences(self, A: str, B: str) -> List[str]:
+        d = {}
+        
+        for i in A.split():
+            d[i] = d.get(i,0)+1
+        for j in B.split():
+            d[j] = d.get(j, 0)+1
+        
+        return [word for word in d if d[word] == 1]

@@ -1,5 +1,6 @@
 #Leetcode 1207. Unique Number of Occurrences
 
+#Solution1
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
         d = {}
@@ -14,3 +15,14 @@ class Solution:
             else:
                 res.append(val)
         return True
+
+#Solution2
+
+class Solution:
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        d = {}
+        for i in arr:
+            if i not in d:
+                d[i] = 1
+            d[i] += 1
+        return len(d.values()) == len(set(d.values()))
