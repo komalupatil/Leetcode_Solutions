@@ -1,4 +1,4 @@
-#leetcode 189 Rotate array
+# Leetcode 189 Rotate array
 #rotate array to the right
 
 #using list indexing

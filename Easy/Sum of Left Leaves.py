@@ -10,14 +10,12 @@
 #         self.right = right
 class Solution:
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
-        ans = 0
         if not root:
             return 0
         
+        ans = 0
         if root.left != None and root.left.left == None and root.left.right == None:
-            ans += root.left.val 
-        
-        
+            ans += root.left.val       
         
         ans += self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right)
         

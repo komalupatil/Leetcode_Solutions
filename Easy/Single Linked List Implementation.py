@@ -4,7 +4,8 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-class LinkiedList:
+
+class LinkedList:
 
     def __init__(self):
         self.head = None
@@ -49,24 +50,19 @@ class LinkiedList:
         if index == 1:
             newNode.next = self.head
             self.head = newNode
-        n = self.head
-        
-        
+        n = self.head       
         
     def printList(self):
         if self.head is None:
             print("list has no element")
             return
         currentNode = self.head
-        while True:
-            if currentNode is None:
-                break
+        while currentNode is not None:
             print(currentNode.data)
-            currentNode = currentNode.next
-            
+            currentNode = currentNode.next            
 
 firstNode = Node("John")
-linkedList = LinkiedList()
+linkedList = LinkedList()
 linkedList.insert(firstNode)
 secondNode = Node("Ben")
 linkedList.insert(secondNode)

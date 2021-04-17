@@ -23,3 +23,17 @@ class Solution:
         # B = map(int, str(n))  #this can be only consumed once, since it return a map object and that map object is then used to iterate over items
         #map function here converts each element of string format of an integer n to an int element of a list
         return reduce(operator.mul, A) - sum(A) #reduce function applied function passed (operator.mul in this case)in it to all the elements of the sequence passed (A in this case)
+
+#Solution3
+
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        product = 1
+        addition = 0
+        
+        while n != 0:
+            num = n%10
+            product *= num
+            addition += num
+            n //= 10
+        return product - addition
