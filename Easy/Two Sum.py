@@ -27,15 +27,4 @@ class Solution:
             else:
                 d[n] = i
 
-#solution3
-
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        d = {}
-        for i in range(len(nums)):
-            x= target - nums[i]
-            if x in d.keys():
-                return (d[x], i)
-            else:
-                d[nums[i]] = i
 
