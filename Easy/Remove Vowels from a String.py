@@ -1,5 +1,6 @@
-#Leetcode1119. Remove Vowels from a String
+# Leetcode 1119. Remove Vowels from a String
 
+#Solution
 class Solution(object):
     def removeVowels(self, S):
         newS = ""

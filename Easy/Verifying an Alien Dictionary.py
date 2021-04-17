@@ -1,9 +1,6 @@
 #Leetcode 953. Verifying an Alien Dictionary
 
-
 #Solution
-
-
 class Solution:
     def isAlienSorted(self, words: List[str], order: str) -> bool:
         if len(words) == 1:

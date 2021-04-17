@@ -1,5 +1,6 @@
 #Leetcode 26. Remove Duplicates from Sorted Array 
 
+#Solution
 class removeduplicates:
     def rem_dup(self, nums):
         slow = 0 #slow pointer

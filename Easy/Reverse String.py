@@ -1,6 +1,6 @@
-#leetcode 344. Reverse String
-#solution1
+# Leetcode 344. Reverse String
 
+#Solution1
 class Solution:
     def reverseString(self, s):
         """
@@ -14,8 +14,7 @@ class Solution:
             i = i-1
         return string2
 
-#solution2
-
+#Solution2
 class Solution:
     def reverseString(self, s):
         """
@@ -27,8 +26,7 @@ class Solution:
             string += s[i]
         return string
 
-#solution3
-
+#Solution3
 class Solution:
     def reverseString(self, s):
         """
@@ -59,7 +57,6 @@ class Solution:
 #Solution5
 #Input: ["h","e","l","l","o"]
 #Output: ["o","l","l","e","h"]
-
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         """

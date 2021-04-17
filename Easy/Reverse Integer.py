@@ -1,4 +1,4 @@
-#Leetcode 7. Reverse Integer
+# Leetcode 7. Reverse Integer
 
 #Solution1
 class Solution:
@@ -10,13 +10,12 @@ class Solution:
             remainder = x % 10
             rev = rev * 10 + remainder
             x = x // 10
-        if int(rev) > 2147483647:
+        if rev > 2147483647:
             return 0
         else:
+            return rev
 
-            return int(rev)
-
-#Solution2 *
+#Solution2
 class Solution:
     def reverse(self, x: int) -> int:
         if x < 0:
