@@ -3,8 +3,6 @@
 #Topic: Two Pointers
 
 #Solution
-
-
 class Solution:
     def isLongPressedName(self, name: str, typed: str) -> bool:
         i = 0

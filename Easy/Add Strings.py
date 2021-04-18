@@ -2,7 +2,6 @@
 
 
 #Solution 
-
 class Solution:
     def addStrings(self, num1: str, num2: str) -> str:
         if len(num1) == 0:

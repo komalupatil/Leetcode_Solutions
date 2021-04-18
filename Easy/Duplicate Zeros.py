@@ -1,3 +1,6 @@
+# Leeetcode 1089. Duplicate Zeros
+
+#Solution
 class Solution:
     def duplicateZeros(self, arr: List[int]) -> None:
         """

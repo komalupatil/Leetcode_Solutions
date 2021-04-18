@@ -1,7 +1,6 @@
 #Leetcode 1002. Find Common Characters
 
 #Solution1
-
 from collections import Counter
 class Solution:
     def commonChars(self, A: List[str]) -> List[str]:
@@ -17,7 +16,6 @@ class Solution:
 
 
 #Solution2
-
 class Solution:
     def commonChars(self, A: List[str]) -> List[str]:
         
@@ -28,7 +26,6 @@ class Solution:
         return list(counter1.elements())
 
 #Solution3
-
 class Solution:
     def commonChars(self, A: List[str]) -> List[str]:
         check = list(A[0])

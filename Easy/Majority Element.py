@@ -1,4 +1,4 @@
-#leetcode169 Majority Element
+#Leetcode 169. Majority Element
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:

@@ -1,7 +1,6 @@
-#leetcode155 Min Stack
+#Leetcode 155. Min Stack
 
 #Solution1
-
 class MinStack:
 
     def __init__(self):
@@ -47,7 +46,6 @@ class MinStack:
 
 
 #Solution2 - using two stacks 
-
 class MinStack:
 
     def __init__(self):

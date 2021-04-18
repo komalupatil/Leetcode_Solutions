@@ -14,3 +14,4 @@ class Solution:
             #to know when to stop shifting bit to the left, we also need to shift num (temp)
             temp = temp >> 1
         return num
+

@@ -1,4 +1,5 @@
-#leetcode 53
+#Leetcode 53. Maximum Subarray
+
 #o(n) solution
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
