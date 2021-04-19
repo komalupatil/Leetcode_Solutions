@@ -37,5 +37,24 @@ class Solution:
                     res.append(word)
         return res
             
-            
+
+#Solution2 - heap
+# 
+# class Solution:
+    def topKFrequent(self, words: List[str], k: int) -> List[str]:
+        d = {}
+        
+        for i in words:
+            d[i] = d.get(i, 0)+1
+        
+        heap = []
+        
+        for key,val in d.items():
+            heapq.heappush(heap, (-val, key))
+        
+        res = []
+        
+        for _ in range(k):
+            res.append(heapq.heappop(heap)[1])
+        return res       
         

@@ -1,9 +1,7 @@
 #Leetcode 347. Top K Frequent Elements
 
 
-#Solution - using hash map and bucket sort
-
-
+#Solution1 - using hash map and bucket sort
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         if len(nums) <k:
@@ -31,5 +29,25 @@ class Solution:
                 if len(res) == k:
                     return res
                 res.append(num)
+        return res
+
+#Solution2 - using Heap
+
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        hashmap = {}
+        for num in nums:
+            if num in hashmap:
+                hashmap[num] += 1
+            else:
+                hashmap[num] = 1
+        heap = []
+        for key in hashmap:
+            heapq.heappush(heap, (-hashmap[key], key))
+        print(heap)
+        res = []
+        for _ in range(k):
+            popped = heapq.heappop(heap)
+            res.append(popped[1])
         return res
 

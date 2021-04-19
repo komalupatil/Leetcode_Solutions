@@ -19,6 +19,7 @@ class Solution:
             pair = strArr[i].split(",")
             child = pair[0][1]
             parent = pair[1][0]
+            #pair ['(1', '2)']
 
             if parent in parents.keys():
                 parents[parent].append(child)
