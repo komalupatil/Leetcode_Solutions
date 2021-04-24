@@ -2,7 +2,6 @@
 
 
 #Solution
-
 class Solution:
     def maxPathSum(self, root: TreeNode) -> int:
     
