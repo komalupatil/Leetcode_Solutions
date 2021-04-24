@@ -50,3 +50,24 @@ class Solution:
             res += char*d[char]
             
         return res
+
+#SOlution3 - using maxHeap
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        charFreq = {}
+        
+        for char in s:
+            charFreq[char] = charFreq.get(char, 0)+1
+        
+        maxHeap = []
+
+        for char, freq in charFreq.items():
+            heapq.heappush(maxHeap, (-freq, char))
+        
+        res = ""
+        
+        while maxHeap:
+            freq, char = heapq.heappop(maxHeap)
+            for _ in range(-freq):
+                res += char
+        return res
