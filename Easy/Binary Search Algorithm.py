@@ -1,4 +1,5 @@
-#leetcode 704
+#Leetcode 704. Binary Search
+
 #time complexity log2(n) +1
 class Solution:
     def search(self, nums: List[int], target: int) -> int:

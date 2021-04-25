@@ -1,6 +1,6 @@
 #Leetcode 54. Spiral Matrix
 
-#Solution
+#Solution1
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         if not matrix or not matrix[0]:
@@ -19,3 +19,42 @@ class Solution:
         elif u == d:
             ans.extend([matrix[u][j] for j in range(l, r + 1)])
         return ans
+
+#Solution2
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        rowStart = 0
+        colStart = 0
+        rowLength = len(matrix) -1
+        colLength = len(matrix[0]) - 1
+        
+        result = []
+        while rowStart <= rowLength and colStart <= colLength:
+            for i in range(colStart, colLength+1):
+                #print("i = ", i)
+                result.append(matrix[rowStart][i])
+
+            rowStart += 1
+
+            for j in range(rowStart, rowLength+1):
+                #print("j = ", j)
+                result.append(matrix[j][colLength])
+
+            colLength -= 1
+
+            if rowStart <= rowLength:
+                for k in range(colLength, colStart-1, -1):
+                    #print("k = ", k)
+                    result.append(matrix[rowLength][k])
+
+                rowLength -= 1
+
+            if colStart <= colLength:
+
+                for l in range(rowLength, rowStart-1, -1):
+                    #print("l = ", l)
+                    result.append(matrix[l][colStart])
+
+                colStart += 1
+        
+        return result

@@ -1,7 +1,6 @@
 #Leetcode 217. Contains Duplicate
 
 #Solution1
-
 class Solution:
     def containsDuplicate(self, nums):
         """
@@ -12,7 +11,6 @@ class Solution:
 
 
 #Solution2
-
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         d = {}

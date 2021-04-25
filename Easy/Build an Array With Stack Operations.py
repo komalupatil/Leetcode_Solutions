@@ -1,8 +1,6 @@
 #Leetcode 1441. Build an Array With Stack Operations
 
-
 #Solution
-
 class Solution:
     def buildArray(self, target: List[int], n: int) -> List[str]:
         result = []

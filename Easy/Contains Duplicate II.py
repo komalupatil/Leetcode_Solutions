@@ -1,7 +1,6 @@
 #Leetcode 219. Contains Duplicate II
 
 #Solution 
-
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         d = {}

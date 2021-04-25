@@ -1,4 +1,4 @@
-#leetcode 637. Average of Levels in Binary Tree
+#Leetcode 637. Average of Levels in Binary Tree
 
 
 #Solution - BFS
@@ -14,21 +14,17 @@ class Solution:
     def averageOfLevels(self, root: TreeNode) -> List[float]:
         queue = deque()
         queue.append(root)
-        result = []
-        
-       
+        result = []        
         
         while queue:
             levelSum = 0
-            levelSize = len(queue)
-            
+            levelSize = len(queue)            
             for _ in range(levelSize):
                 currentNode = queue.popleft()
                 levelSum += currentNode.val
                 if currentNode.left:
                     queue.append(currentNode.left)
                 if currentNode.right:
-                    queue.append(currentNode.right)
-                
+                    queue.append(currentNode.right)                
             result.append(levelSum/levelSize)
         return result
