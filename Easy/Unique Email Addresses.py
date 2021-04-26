@@ -1,8 +1,6 @@
-#leetcode 929. Unique Email Addresses
+#Leetcode 929. Unique Email Addresses
 
 #Solution 
-
-
 class Solution:
     def numUniqueEmails(self, emails: List[str]) -> int:
         result = set()

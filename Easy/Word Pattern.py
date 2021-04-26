@@ -5,18 +5,14 @@
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         if not pattern or not s:
-            return False
-        
-        
-        d = {}
+            return False  
 
+        d = {}
         s = s.split(" ")
         if len(pattern) != len(s):
             return False
-        
         i = 0
         j = 0
-        
         while i < len(pattern) and j < len(s):
             if pattern[i] in d:
                 if d[pattern[i]] != s[j]:

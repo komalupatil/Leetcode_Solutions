@@ -1,7 +1,6 @@
 #Leetcode 733. Flood Fill
 
 #Solution - similar logic to Number of Islands
-
 class Solution:
     def floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
         if image == None:

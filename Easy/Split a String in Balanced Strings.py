@@ -1,8 +1,6 @@
 #Leetcode 1221. Split a String in Balanced Strings
 
 #Solution1
-
-
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
         result = 0
@@ -15,7 +13,6 @@ class Solution:
 
 
 #Solution2 using accumulate function and list comprehension
-
 from itertools import accumulate as acc
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
@@ -23,7 +20,6 @@ class Solution:
         return list(acc(1 if c == "R" else -1 for c in s)).count(0)
 
 #Solution3
-
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
         substrings = l_count = r_count = 0

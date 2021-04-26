@@ -1,7 +1,6 @@
 #Leetcode 243. Shortest Word Distance
 
 #Solution
-
 class Solution:
     def shortestDistance(self, wordsDict, word1, word2):
         ans = float('inf')

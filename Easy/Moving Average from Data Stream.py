@@ -4,7 +4,6 @@
 #calculate the moving average of all integers in the sliding window
 
 #Solution1
-
 class MovingAverage:
 
     def __init__(self, size: int):

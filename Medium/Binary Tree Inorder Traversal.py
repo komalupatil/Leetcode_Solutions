@@ -1,7 +1,6 @@
 #Leetcode 94. Binary Tree Inorder Traversal
 
 #Solution1 - recursive
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -22,7 +21,6 @@ class Solution:
 
 
 #Solution2 - Iterative 
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

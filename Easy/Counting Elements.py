@@ -1,3 +1,4 @@
+#Leetcode 1426. Counting Elements
 #Problem7 from 30 day leetcoding challenge - new problem introduced by leetcode 
 #Given an integer array arr, count element x such that x + 1 is also in arr.
 #If there're duplicates in arr, count them seperately.
@@ -22,8 +23,7 @@
 #0 <= arr[i] <= 1000
 
 
-#Solution1 o(n^2)
-
+#Solution1
 class Solution:
     def countElements(self, arr: List[int]) -> int:
         
@@ -36,7 +36,6 @@ class Solution:
         return count
 
 #Solution2 (using hashset)
-
 class Solution:
     def countElements(self, arr: List[int]) -> int:
         
@@ -50,7 +49,6 @@ class Solution:
         return count
 
 #Solution3 (using dictionary)
-
 class Solution:
     def countElements(self, arr: List[int]) -> int:
         d = {}

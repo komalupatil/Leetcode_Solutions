@@ -1,7 +1,6 @@
 #Leetcode 819. Most Common Word
 
 #Solution
-
 class Solution:
     def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
         for c in "!?',;.":

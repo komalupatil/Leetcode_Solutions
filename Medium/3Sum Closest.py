@@ -1,7 +1,6 @@
 #Leetcode 16. 3Sum Closest
 
 #Solution
-
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         nums.sort()

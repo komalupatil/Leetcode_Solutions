@@ -1,5 +1,6 @@
 #Leetcode 696. Count Binary Substrings
 
+#Solution1
 class Solution:
     def countBinarySubstrings(self, s: str) -> int:
         res = 0
@@ -17,7 +18,6 @@ class Solution:
 
 
 #Solution2
-
 class Solution:
     def countBinarySubstrings(self, s: str) -> int:
         groups = [1]

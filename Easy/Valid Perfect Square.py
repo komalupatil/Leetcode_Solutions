@@ -1,7 +1,6 @@
 #Leetcode 367. Valid Perfect Square
 
 #Solution1 - using Newton's method
-
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
         x=num
@@ -12,7 +11,6 @@ class Solution:
 
 #Solution2
 #Math Trick for Square number is 1+3+5+ ... +(2n-1)
-
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
         x,i=0,1
@@ -22,7 +20,6 @@ class Solution:
         return x==num
 
 #Solution3 - binary search approach
-
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
         l = 0

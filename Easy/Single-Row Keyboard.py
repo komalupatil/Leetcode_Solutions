@@ -1,5 +1,6 @@
 #leetcode 1165. Single-Row Keyboard
 
+#Solution1
 class Solution:
     def calculateTime(self, keyboard: str, word: str) -> int:
         j = 0
@@ -11,7 +12,6 @@ class Solution:
         return time
 
 #solution2 - without using dictionary
-
 class Solution:
     def calculateTime(self, keyboard: str, word: str) -> int:
         cur_index = 0

@@ -1,7 +1,6 @@
 #Leetcode 404. Sum of Left Leaves
 
 #Solution - DFS recursive
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -23,7 +22,6 @@ class Solution:
 
 
 #Solution - BFS recursive
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -36,12 +34,9 @@ class Solution:
         if root == None:
             return 0
         
-        queue = deque()
-        
-        queue.append(root)
-        
-        result = 0
-        
+        queue = deque()  
+        queue.append(root)  
+        result = 0  
         while queue:
             currentNode = queue.popleft()
             if currentNode.left:

@@ -1,6 +1,6 @@
 #leetcode 760. Find Anagram Mappings
-#solution1 using simple dictionary approach
 
+#solution1 using simple dictionary approach
 class AnagramMappings:
     def mapping(self, A, B):
         val = {}
@@ -19,8 +19,6 @@ print(result)
 
 
 #solution 2 using comprehension
-
-
 class AnagramMappings:
     def mapping(self, A, B):
         lookup = {val:i for i, val in enumerate(B)}

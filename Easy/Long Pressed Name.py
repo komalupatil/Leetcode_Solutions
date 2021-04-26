@@ -1,7 +1,6 @@
 #Leetcode 925. Long Pressed Name
 
 #Topic: Two Pointers
-
 #Solution
 class Solution:
     def isLongPressedName(self, name: str, typed: str) -> bool:

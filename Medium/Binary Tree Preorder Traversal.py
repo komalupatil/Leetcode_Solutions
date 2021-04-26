@@ -1,7 +1,6 @@
 #Leetcode 144. Binary Tree Preorder Traversal
 
 #Solution1 recursive:
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -24,7 +23,6 @@ class Solution:
 
 
 #Solution2 iterative:
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):

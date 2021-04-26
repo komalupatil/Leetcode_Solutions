@@ -1,4 +1,4 @@
-#leetcode171. Excel Sheet Column Number
+#Leetcode 171. Excel Sheet Column Number
 
 class Solution:
     def titleToNumber(self, s: str) -> int:

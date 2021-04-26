@@ -1,7 +1,6 @@
 #Leetcode 746. Min Cost Climbing Stairs
 
 #Solution - DP
-
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         

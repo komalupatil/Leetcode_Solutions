@@ -1,6 +1,6 @@
 #leetcode 1281. Subtract the Product and Sum of Digits of an Integer
-#solution1
 
+#solution1
 class Solution:
     def subtractProductAndSum(self, n: int) -> int:
         if n == 0:
@@ -16,7 +16,6 @@ class Solution:
 
 
 #Solution2 using map function
-
 class Solution:
     def subtractProductAndSum(self, n: int) -> int:
         A = list(map(int, str(n))) #this will cereate sequencedobject (list in this case)  out of returned map object (through map function) and hence can be consumed multiple times
@@ -25,7 +24,6 @@ class Solution:
         return reduce(operator.mul, A) - sum(A) #reduce function applied function passed (operator.mul in this case)in it to all the elements of the sequence passed (A in this case)
 
 #Solution3
-
 class Solution:
     def subtractProductAndSum(self, n: int) -> int:
         product = 1

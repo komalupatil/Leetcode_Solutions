@@ -20,7 +20,6 @@ class Solution:
         return start
 
 #Solution2
-
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         i = 0

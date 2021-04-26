@@ -1,8 +1,6 @@
 #Leetcode 674. Longest Continuous Increasing Subsequence
 
-
 #Solution - sliding window
-
 class Solution:
     def findLengthOfLCIS(self, nums: List[int]) -> int:
         if len(nums) == 1:

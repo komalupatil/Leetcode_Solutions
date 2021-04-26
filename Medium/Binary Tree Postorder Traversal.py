@@ -1,7 +1,6 @@
 #Leetcode 145. Binary Tree Postorder Traversal
 
 #Solution - Recursive 
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -21,7 +20,6 @@ class Solution:
             result.append(node.val)
 
 #Solution - Iterative
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -30,8 +28,7 @@ class Solution:
 #         self.right = right
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
-        res = []
-        
+        res = []   
         stack = [root]
         
         while stack:
@@ -39,7 +36,5 @@ class Solution:
             if node:
                 res.append(node.val)
                 stack.append(node.left)
-                stack.append(node.right)
-                
-                
+                stack.append(node.right)                
         return res[::-1]

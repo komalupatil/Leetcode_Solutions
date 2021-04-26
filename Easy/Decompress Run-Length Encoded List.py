@@ -9,7 +9,6 @@ class Solution:
         return result
 
 
-
 #solution2
 class Solution:
     def decompressRLElist(self, nums: List[int]) -> List[int]:

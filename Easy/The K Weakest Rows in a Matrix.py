@@ -1,18 +1,14 @@
 #Leetcode 1337. The K Weakest Rows in a Matrix
 
 #Solution1 - heap - nsmallest 
-
 from heapq import nsmallest 
-
 class Solution:
     def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
         S = [[sum(g),i] for i,g in enumerate(mat)]
         return (i for count, i in nsmallest(k,S) )
 
 
-
 #Solution2 - Sorting
-
 class Solution:
     def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
         S = [[sum(g),i] for i,g in enumerate(mat)]

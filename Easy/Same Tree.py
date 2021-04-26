@@ -1,8 +1,6 @@
 #Leetcode 100. Same Tree
 
 #Solution - Iterative
-
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):

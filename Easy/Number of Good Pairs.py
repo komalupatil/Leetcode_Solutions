@@ -3,7 +3,6 @@
 #Topics: Hash Table
 
 #Solution1
-
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         d = {}
@@ -18,7 +17,6 @@ class Solution:
         return result
 
 #Solution2
-
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         d = {}

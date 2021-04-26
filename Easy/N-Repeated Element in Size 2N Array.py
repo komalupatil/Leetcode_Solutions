@@ -1,7 +1,6 @@
 #Leetcode 961. N-Repeated Element in Size 2N Array
 
 #Solution
-
 class Solution:
     def repeatedNTimes(self, A: List[int]) -> int:
         d = {}

@@ -1,4 +1,4 @@
-#leetcode 1295. Find Numbers with Even Number of Digits
+#Leetcode 1295. Find Numbers with Even Number of Digits
 
 class Solution:
     def findNumbers(self, nums: List[int]) -> int:

@@ -28,4 +28,4 @@ class Solution:
             return 1 + max(left, right)
         
         depth(root)
-        return self.max124. Binary Tree Maximum Path Sum
+        return self.max

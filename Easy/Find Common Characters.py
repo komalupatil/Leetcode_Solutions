@@ -13,8 +13,6 @@ class Solution:
                 counter1[k] = min(counter1[k], counter2[k])
         return counter1.elements()
 
-
-
 #Solution2
 class Solution:
     def commonChars(self, A: List[str]) -> List[str]:

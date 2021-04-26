@@ -1,7 +1,6 @@
 #Leetcode 199. Binary Tree Right Side View
 
 #Solution - BFS approach
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -19,8 +18,7 @@ class Solution:
         queue.append(root)
         
         while queue:
-            levelsize = len(queue)
-            
+            levelsize = len(queue)           
             for _ in range(levelsize):
                 currentNode = queue.popleft()
                 val = currentNode.val
