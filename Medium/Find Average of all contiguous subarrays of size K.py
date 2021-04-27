@@ -1,7 +1,6 @@
 #avg of contiguous subarrays of size k optimal O(n)
 
 #solution1 o(n)
-
 def avg_of_subarrays(K, arr):
     result = []
     windowSum, windowStart = 0.0, 0
@@ -21,7 +20,6 @@ def main():
 main()
             
 #solution2
-
 #Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
 #brute force
 def avg_of_subarrays(K, arr):

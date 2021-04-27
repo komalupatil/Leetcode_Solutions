@@ -1,8 +1,6 @@
 #Leetcode 986. Interval List Intersections
 
 #Solution1
-
-
 class Solution:
     def intervalIntersection(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]:
         
@@ -25,7 +23,6 @@ class Solution:
 
 
 #Solution2
-
 class Solution:
     def intervalIntersection(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]:
         i,j = 0,0
