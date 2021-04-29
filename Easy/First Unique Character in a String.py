@@ -1,8 +1,6 @@
 #Leetcode 387. First Unique Character in a String
 
-#Solution 
-
-class Solution:
+class Solution1:
     def firstUniqChar(self, s: str) -> int:
         if s == "":
             return -1
@@ -18,3 +16,12 @@ class Solution:
             if d[char] == 1:
                 return i
         return -1
+
+class Solution2:
+    def firstUniqChar(self, s: str) -> int:
+        letters='abcdefghijklmnopqrstuvwxyz'
+        index = []
+        for l in letters:
+            if s.count(l) == 1:
+                index.append(s.index(l))
+        return min(index) if len(index) > 0 else -1
