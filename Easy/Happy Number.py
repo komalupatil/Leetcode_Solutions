@@ -16,9 +16,8 @@
 #6^2 + 8^2 = 100
 #1^2 + 0^2 + 0^2 = 1
 
-#Solution - once the number is repeated return false
- 
-class Solution:
+#once the number is repeated return false
+class Solution1:
     def isHappy(self, n: int) -> bool:
         visited = set()
         while n not in visited:
@@ -27,3 +26,22 @@ class Solution:
             if n==1:
                 return True
         return False
+
+#Slow and fast pointer approach
+class Solution2:
+    def isHappy(self, n: int) -> bool:
+        slow,fast = n,n
+        while True:
+            slow = self.find_square_sum(slow)
+            fast = self.find_square_sum(self.find_square_sum(fast))
+            if slow == fast:
+                break
+        return slow == 1
+    
+    def find_square_sum(self, num):
+        _sum = 0
+        while num>0:
+            digit = num%10
+            _sum += digit*digit
+            num//=10
+        return _sum

@@ -1,8 +1,6 @@
 #Leetcode 844. Backspace String Compare
 
-#Solution1
-
-class Solution:
+class Solution1:
     def backspaceCompare(self, S: str, T: str) -> bool:
         def bsString(string):
             result = []
@@ -15,10 +13,7 @@ class Solution:
             return result
         return bsString(S) == bsString(T)
 
-
-#Solution2
-
-class Solution:
+class Solution2:
     def backspaceCompare(self, S: str, T: str) -> bool:
         indexS, indexT = len(S)-1, len(T)-1
         countS = countT = 0

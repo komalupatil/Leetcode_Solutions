@@ -17,9 +17,9 @@ class Solution(object):
             char_freq[right_char] +=1
             while len(char_freq) > k:
                 left_char = s[winStart]
-                char_freq[left] -= 1
-                if char_freq[left] == 0:
-                    del char_freq[left]
+                char_freq[left_char] -= 1
+                if char_freq[left_char] == 0:
+                    del char_freq[left_char]
                 winStart +=1
         maxLength = max(maxLength, (winEnd-winStart+1))
 
