@@ -8,7 +8,6 @@
 #Input: "Hello World"
 #Output: 5
 
-#Solution
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         l = s.split(" ")

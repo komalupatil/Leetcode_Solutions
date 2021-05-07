@@ -1,7 +1,7 @@
 #Leetcode 1046. Last Stone Weight
 
-#Solution using max heap
-class Solution:
+#using max heap
+# class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
         if len(stones) == 0:
             return 0

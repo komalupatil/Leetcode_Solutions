@@ -1,6 +1,6 @@
 #Leetcode 1539. Kth Missing Positive Number
 
-#Solution - linear search
+#linear search approach
 class Solution:
     def findKthPositive(self, arr: List[int], k: int) -> int:
         set_arr = set(arr)
@@ -10,7 +10,7 @@ class Solution:
             if k == 0:
                 return i
 
-#Solution - binary search
+#binary search approach
 class Solution:
     def findKthPositive(self, arr: List[int], k: int) -> int:
         if k <= arr[0] - 1:

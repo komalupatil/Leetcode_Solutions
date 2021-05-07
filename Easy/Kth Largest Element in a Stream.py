@@ -1,6 +1,5 @@
 #Leetcode 703. Kth Largest Element in a Stream
 
-#Solution
 class KthLargest:
 
     def __init__(self, k: int, nums: List[int]):
