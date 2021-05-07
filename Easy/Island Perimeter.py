@@ -1,6 +1,5 @@
 #Leetcode 463. Island Perimeter
 
-#Solution
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
         if len(grid) == 0:

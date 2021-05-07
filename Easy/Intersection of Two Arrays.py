@@ -1,8 +1,6 @@
-#leetcode 349. Intersection of Two Arrays
+#Leetcode 349. Intersection of Two Arrays
 
-#solution1
-
-class Solution:
+class Solution1:
     def intersection(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -15,8 +13,7 @@ class Solution:
 
 
 
-#solution2
-class Solution:
+class Solution2:
     def intersection(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -31,7 +28,6 @@ class Solution:
                 continue
             else:
                 dicti[nums1[i]] = 1
-        print(dicti)
 
         for j in range(len(nums2)):
             if nums2[j] in dicti.keys():
@@ -41,9 +37,7 @@ class Solution:
         return listi
 
     
-#Solution3
-
-class Solution:
+class Solution3:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
         
         result = []

@@ -1,7 +1,5 @@
 #Leetcode 412. Fizz Buzz
 
-#Solution
-
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         result = []

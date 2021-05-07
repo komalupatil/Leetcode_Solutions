@@ -1,7 +1,6 @@
 #Leetcode 205. Isomorphic Strings
 
 #Similar problem : Leetcode 290. Word Pattern
-#Solution
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         if not s or not t:

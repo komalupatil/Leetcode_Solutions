@@ -1,6 +1,5 @@
 #Leetcode 824. Goat Latin
 
-#Solution
 class Solution:
     def toGoatLatin(self, S: str) -> str:
         S = S.split()

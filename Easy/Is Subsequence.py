@@ -1,8 +1,5 @@
 #Leetcode 392. Is Subsequence
 
-
-#Solution - using two pointers
-
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         p1 = 0

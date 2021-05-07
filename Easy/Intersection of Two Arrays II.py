@@ -1,8 +1,6 @@
 #Leetcode 350. Intersection of Two Arrays II
 
-#Solution1  - sorted
-
-class Solution:
+class Solution1:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         result = []
         nums1 = sorted(nums1)
@@ -20,9 +18,7 @@ class Solution:
         return result
         
 
-#Solution2 - using dictionary
-
-class Solution:
+class Solution2:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         dict1 = dict()
         for i in nums1:

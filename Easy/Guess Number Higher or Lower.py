@@ -1,6 +1,6 @@
 #Leetcode 374. Guess Number Higher or Lower
 
-#Solution - binary search
+#binary search approach
 
 # The guess API is already defined for you.
 # @param num, your guess

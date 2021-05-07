@@ -1,8 +1,5 @@
 #Leetcode 232. Implement Queue using Stacks
 
-
-#Solution
-
 class MyQueue:
 
     def __init__(self):

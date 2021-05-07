@@ -1,8 +1,7 @@
 #Leetcode 225. Implement Stack using Queues
 
 #Solution 1
-
-from collections import deque
+# from collections import deque
 class MyStack:
 
     def __init__(self):
@@ -51,7 +50,6 @@ class MyStack:
 # param_4 = obj.empty()
 
 #Solution 2
-
 from collections import deque
 class MyStack:
 
