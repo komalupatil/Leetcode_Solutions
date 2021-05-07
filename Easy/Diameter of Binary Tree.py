@@ -8,7 +8,6 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
         if root == None:

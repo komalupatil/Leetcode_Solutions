@@ -1,7 +1,5 @@
 #Leetcode 1346. Check If N and Its Double Exist
 
-#Solution
-
 class Solution:
     def checkIfExist(self, arr: List[int]) -> bool:
         s = collections.Counter(arr)

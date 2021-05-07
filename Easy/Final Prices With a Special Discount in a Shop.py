@@ -2,7 +2,6 @@
 
 #Solution - Monotonic stack
 ## build a increasing stack while finding next smaller element
-
 class Solution:
     def finalPrices(self, prices: List[int]) -> List[int]:
         if len(prices) == 0:

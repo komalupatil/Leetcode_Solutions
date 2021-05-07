@@ -30,7 +30,6 @@ class Solution2:
                 else:
                     break
         
-        
             while indexT >=0:
                 
                 if T[indexT] == "#":

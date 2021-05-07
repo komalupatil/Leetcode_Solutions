@@ -1,7 +1,6 @@
 #Leetcode 1688. Count of Matches in Tournament
 
-#Solution1
-class Solution:
+class Solution1:
     def numberOfMatches(self, n: int) -> int:
         
         res = 0
@@ -16,7 +15,7 @@ class Solution:
                 n = (n-1)//2+1     
         return res
 
-#Solution2
-class Solution:
+
+class Solution2:
     def numberOfMatches(self, n: int) -> int:
         return n-1

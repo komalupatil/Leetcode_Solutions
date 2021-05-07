@@ -1,6 +1,5 @@
 #Leetcode 455. Assign Cookies
 
-#Solution (two pointers)
 class Solution:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:
         s.sort()

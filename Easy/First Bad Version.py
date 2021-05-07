@@ -1,13 +1,10 @@
 #Leetcode 278. First Bad Version
 
-
-#Solution - using binary search
-
+#using binary search approach
 # The isBadVersion API is already defined for you.
 # @param version, an integer
 # @return a bool
 # def isBadVersion(version):
-
 class Solution:
     def firstBadVersion(self, n):
         """

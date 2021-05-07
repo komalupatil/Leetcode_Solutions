@@ -1,7 +1,6 @@
 #Leetcode 1108. Defanging an IP Address
 
-#Solution1
-class Solution:
+class Solution1:
     def defangIPaddr(self, address: str) -> str:
         if len(address) == 0:
             return address
@@ -14,18 +13,14 @@ class Solution:
         return newIP
 
 
-
-#Solution2
-class Solution:
+class Solution2:
     def defangIPaddr(self, address: str) -> str:
         if len(address) == 0:
             return address
         return address.replace('.', '[.]')
 
 
-
-#Solution3
-class Solution:
+class Solution3:
     def defangIPaddr(self, address: str) -> str:
         if len(address) == 0:
             return address

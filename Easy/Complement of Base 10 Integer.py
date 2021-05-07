@@ -1,7 +1,5 @@
 #Leetcode 1009. Complement of Base 10 Integer
 
-#Solution
-
 class Solution:
     def bitwiseComplement(self, N: int) -> int:
         if N == 0:

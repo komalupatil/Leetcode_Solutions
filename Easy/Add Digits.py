@@ -1,7 +1,5 @@
 #Leetcode 258. Add Digits
 
-#Solution
-
 class Solution:
     def addDigits(self, num: int) -> int:
         if num == 0:

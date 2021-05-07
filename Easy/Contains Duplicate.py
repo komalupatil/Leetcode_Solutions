@@ -1,7 +1,6 @@
 #Leetcode 217. Contains Duplicate
 
-#Solution1
-class Solution:
+class Solution1:
     def containsDuplicate(self, nums):
         """
         :type nums: List[int]
@@ -9,9 +8,7 @@ class Solution:
         """
         return len(nums) != len(set(nums))
 
-
-#Solution2
-class Solution:
+class Solution2:
     def containsDuplicate(self, nums: List[int]) -> bool:
         d = {}
         
@@ -20,5 +17,15 @@ class Solution:
         for key in d:
             if d[key] > 1:
                 return True
+        return False
+
+class Solution3:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        d = {}
+        
+        for num in nums:
+            if num in d:
+                return True
+            d[num] = 0
         return False
 

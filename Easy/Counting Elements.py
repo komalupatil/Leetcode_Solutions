@@ -23,8 +23,7 @@
 #0 <= arr[i] <= 1000
 
 
-#Solution1
-class Solution:
+class Solution1:
     def countElements(self, arr: List[int]) -> int:
         
         count = 0
@@ -35,10 +34,9 @@ class Solution:
                 continue
         return count
 
-#Solution2 (using hashset)
-class Solution:
+#(using hashset)
+class Solution2:
     def countElements(self, arr: List[int]) -> int:
-        
         output = set(arr)
         count = 0
         for num in arr:
@@ -48,8 +46,8 @@ class Solution:
                 continue
         return count
 
-#Solution3 (using dictionary)
-class Solution:
+#(using dictionary)
+class Solution3:
     def countElements(self, arr: List[int]) -> int:
         d = {}
         for i in arr:

@@ -1,8 +1,6 @@
 #Leetcode 1491. Average Salary Excluding the Minimum and Maximum Salary
 
-#Solution1
-
-class Solution:
+class Solution1:
     def average(self, salary: List[int]) -> float:
         salary.sort()
         
@@ -11,9 +9,7 @@ class Solution:
             total += salary[i]
         return total/(len(salary)-2)
 
-#Solution2
-
-class Solution:
+class Solution2:
     def average(self, salary: List[int]) -> float:
         minS = float('inf')
         maxS = float('-inf')

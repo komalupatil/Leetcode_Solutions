@@ -1,7 +1,6 @@
 #Leetcode 989. Add to Array-Form of Integer
 
-#Solution1
-class Solution:
+class Solution1:
     def addToArrayForm(self, A: List[int], K: int) -> List[int]:
         final_list = []
         output = str(int("".join(map(str, A))) + K)
@@ -9,8 +8,7 @@ class Solution:
             final_list.append(int(i))
         return final_list
 
-#Solution2
-class Solution:
+class Solution2:
     def addToArrayForm(self, A: List[int], K: int) -> List[int]:
         A[-1] += K
         i = len(A) - 1

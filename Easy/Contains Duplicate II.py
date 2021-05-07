@@ -1,6 +1,5 @@
 #Leetcode 219. Contains Duplicate II
-
-#Solution 
+ 
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         d = {}
@@ -8,7 +7,6 @@ class Solution:
         for i,num in enumerate(nums):
             if num in d and i-d[num] <= k:
                 return True
-            else:
-                d[num] = i
+            d[num] = i
         
         return False

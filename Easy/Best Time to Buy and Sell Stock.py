@@ -1,4 +1,5 @@
-#leetcode 121
+#Leetcode 121. Best Time to Buy and Sell Stock
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         if len(prices) <=1:

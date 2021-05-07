@@ -1,4 +1,4 @@
-#leetcode 760. Find Anagram Mappings
+#Leetcode 760. Find Anagram Mappings
 
 #solution1 using simple dictionary approach
 class AnagramMappings:

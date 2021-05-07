@@ -1,7 +1,6 @@
 #Leetcode 1134. Armstrong Number
 
-#Solution1
-class Solution:
+class Solution1:
     def isArmstrong(self, N: int) -> bool:
         result = 0
         for i in str(N):
@@ -16,8 +15,7 @@ print(result)
 print(result1)
 
 
-#Solution2
-class Solution:
+class Solution2:
     def isArmstrong(self, N: int) -> bool:
         temp = N
         total = 0

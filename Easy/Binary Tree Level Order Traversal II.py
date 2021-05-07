@@ -1,7 +1,5 @@
 #Leetcode 107. Binary Tree Level Order Traversal II
 
-#Solution
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

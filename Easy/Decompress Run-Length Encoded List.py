@@ -1,7 +1,6 @@
-#leetcode 1313. Decompress Run-Length Encoded List
+#Leetcode 1313. Decompress Run-Length Encoded List
 
-#solution1 
-class Solution:
+class Solution1:
     def decompressRLElist(self, nums: List[int]) -> List[int]:
         result = []
         for i in range(0, len(nums), 2):
@@ -9,8 +8,7 @@ class Solution:
         return result
 
 
-#solution2
-class Solution:
+class Solution2:
     def decompressRLElist(self, nums: List[int]) -> List[int]:
         return sum([nums[i]*[nums[i+1]] for i in range(0,len(nums),2)],[])
             

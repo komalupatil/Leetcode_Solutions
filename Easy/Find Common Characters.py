@@ -1,8 +1,7 @@
 #Leetcode 1002. Find Common Characters
 
-#Solution1
 from collections import Counter
-class Solution:
+class Solution1:
     def commonChars(self, A: List[str]) -> List[str]:
         
         counter1 = Counter(A[0])
@@ -13,8 +12,7 @@ class Solution:
                 counter1[k] = min(counter1[k], counter2[k])
         return counter1.elements()
 
-#Solution2
-class Solution:
+class Solution2:
     def commonChars(self, A: List[str]) -> List[str]:
         
         counter1 = collections.Counter(A[0])
@@ -23,8 +21,7 @@ class Solution:
             counter1 &= Counter(a)
         return list(counter1.elements())
 
-#Solution3
-class Solution:
+class Solution3:
     def commonChars(self, A: List[str]) -> List[str]:
         check = list(A[0])
         for word in A:
@@ -34,3 +31,5 @@ class Solution:
                     newCheck.append(c)
                     check.remove(c)
             check = newCheck
+        
+        return check

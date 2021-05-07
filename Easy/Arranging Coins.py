@@ -1,9 +1,6 @@
 #Leetcode 441. Arranging Coins
 
-
-#Solution1
-
-class Solution:
+class Solution1:
     def arrangeCoins(self, n: int) -> int:
         i = 1
         while n >= i:
@@ -13,11 +10,8 @@ class Solution:
             return i
         else:
             return i-1
-    
 
-
-#Solution2
-class Solution:
+class Solution2:
     def arrangeCoins(self, n: int) -> int:
         if n == 1:
             return 1

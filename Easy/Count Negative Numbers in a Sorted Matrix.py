@@ -1,6 +1,5 @@
 #Leetcode 1351. Count Negative Numbers in a Sorted Matrix
 
-#Solution
 class Solution:
     def countNegatives(self, grid: List[List[int]]) -> int:
         row = 0

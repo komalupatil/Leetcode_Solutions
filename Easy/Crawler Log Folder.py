@@ -1,7 +1,5 @@
 #Leetcode 1598. Crawler Log Folder
 
-#Solution 
-
 class Solution:
     def minOperations(self, logs: List[str]) -> int:
         count = 0

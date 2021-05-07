@@ -1,7 +1,5 @@
 #Leetcode 724. Find Pivot Index
 
-#Solution
-
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         

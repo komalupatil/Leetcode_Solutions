@@ -1,7 +1,5 @@
 #Leetcode 415. Add Strings
-
-
-#Solution 
+ 
 class Solution:
     def addStrings(self, num1: str, num2: str) -> str:
         if len(num1) == 0:
@@ -14,10 +12,9 @@ class Solution:
         i = len(num1)-1
         j = len(num2)-1
         
-        carry = 0
+        carry = 0       
         
-        
-        #continue till both are strings are empty
+        #continue till both strings are empty
         while i>=0 or j>=0:
             addition = 0
             

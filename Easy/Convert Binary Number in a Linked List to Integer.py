@@ -5,7 +5,7 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-class Solution2:
+class Solution1:
     def getDecimalValue(self, head: ListNode) -> int:
         result = []
         temp = head

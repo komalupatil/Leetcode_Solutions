@@ -1,7 +1,5 @@
 #Leetcode 682. Baseball Game
 
-#Solution
-
 class Solution:
     def calPoints(self, ops: List[str]) -> int:
         

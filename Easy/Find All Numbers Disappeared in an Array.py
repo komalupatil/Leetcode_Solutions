@@ -1,6 +1,6 @@
 #Leetcode 448. Find All Numbers Disappeared in an Array
 
-#Solution using cyclic sort
+#using cyclic sort
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         i = 0

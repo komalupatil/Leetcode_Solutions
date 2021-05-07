@@ -1,6 +1,6 @@
 #Leetcode 70. Climbing Stairs
 
-#Solution - DP bottom up approach (can be solved by recursion)
+#DP bottom up approach (can be solved by recursion)
 class Solution:
     def climbStairs(self, n: int) -> int:
         if n == 1:

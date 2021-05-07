@@ -1,8 +1,5 @@
 #Leetcode 237. Delete Node in a Linked List
 
-
-#Solution
-
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):

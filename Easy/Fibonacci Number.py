@@ -1,8 +1,6 @@
 #Leetcode 509. Fibonacci Number
 
-#Solution
-
-class Solution:
+class Solution1:
     def fib(self, n: int) -> int:
         if n == 0:
             return 0
@@ -14,11 +12,7 @@ class Solution:
             a,b=b,a+b
         return a
 
-#Solution2
-
-#Recursive
-
-class Solution:
+class Solution2:
     def fib(self, n: int) -> int:
         if n == 0:
             return 0

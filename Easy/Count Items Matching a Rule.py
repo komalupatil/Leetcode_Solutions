@@ -1,7 +1,5 @@
 #Leetcode 1773. Count Items Matching a Rule
 
-#Solution
-
 class Solution:
     def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:
         if ruleKey == "type": 

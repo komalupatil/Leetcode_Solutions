@@ -1,6 +1,6 @@
 #Leetcode 744. Find Smallest Letter Greater Than Target
 
-#Solution - binary search
+#binary search approach
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
         l = 0

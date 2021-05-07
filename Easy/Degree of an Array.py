@@ -1,6 +1,5 @@
 #Leetcode 697. Degree of an Array
 
-#Solution
 class Solution:
     def findShortestSubArray(self, nums: List[int]) -> int:
         first = {}

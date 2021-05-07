@@ -1,4 +1,5 @@
-#leetcode122
+#Leetcode 122. Best Time to Buy and Sell Stock II
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         max_profit = 0

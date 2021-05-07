@@ -1,7 +1,6 @@
 #Leetcode 997. Find the Town Judge
 
-#Solution1
-class Solution:
+class Solution1:
     def findJudge(self, N: int, trust: List[List[int]]) -> int:
         if trust == [] and N==1:
             return 1
@@ -19,8 +18,7 @@ class Solution:
                 return i
         return -1
 
-#Solution2
-class Solution:
+class Solution2:
     def findJudge(self, N: int, trust: List[List[int]]) -> int:
         if len(trust) < N - 1:
             return -1
