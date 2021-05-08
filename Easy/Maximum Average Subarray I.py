@@ -1,12 +1,12 @@
 #Leetcode 643. Maximum Average Subarray I
 
-#Solution - sliding window pattern
+#sliding window pattern
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
         if len(nums) == 1 and k==1:
             return nums[0]
         windowStart = 0
-        maxSum = float('-inf')
+        maxSum = float('-inf') #values in nums can be negative so take min Sum (min int value)
         windowSum = 0.0
         for windowEnd in range(len(nums)):
             windowSum += nums[windowEnd]
@@ -15,6 +15,6 @@ class Solution:
                 windowSum = windowSum - nums[windowStart]
                 windowStart +=1
                 
-        maxAvg = maxSum/k
+        maxAvg = maxSum/k #max avg will be of the max sum so need to calculate avg for each max sum
         return maxAvg
                 

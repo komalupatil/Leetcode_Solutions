@@ -2,10 +2,8 @@
 
 class Solution:
     def reformatNumber(self, number: str) -> str:
-        result = []
-        
+        result = [] 
         number = number.replace("-", "").replace(" ", "")
-        
         for i in range(0, len(number), 3):
             if i+4 != len(number):
                 result.append(number[i:i+3])

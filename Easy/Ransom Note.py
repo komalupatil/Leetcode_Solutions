@@ -1,8 +1,6 @@
 #Leetcode 383. Ransom Note
 
-#Solution1
-
-class Solution:
+class Solution1:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         
         letters = {}
@@ -20,9 +18,7 @@ class Solution:
                 return False
         return True
 
-#Soltuion2 using set() and count()
-
-class Solution:
+class Solution2:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         
         for i in set(ransomNote):

@@ -1,7 +1,5 @@
 #Leetcode 111. Minimum Depth of Binary Tree
 
-#Solution - BFS
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -34,8 +32,6 @@ class Solution:
                 if currentNode.right:
                     queue.append(currentNode.right)
 
-
-#Solution - DFS
 
 # Definition for a binary tree node.
 # class TreeNode:

@@ -1,18 +1,15 @@
 #Leetcode 100. Same Tree
 
-#Solution - Iterative
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
-class Solution:
+class Solution1:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
         stack = []
         stack.append((p, q))
-        
         while stack:
             
             node1, node2 = stack.pop(0)
@@ -31,12 +28,8 @@ class Solution:
             
             stack.append((node1.left, node2.left))
             stack.append((node1.right, node2.right))
-            
-                     
+                                
         return True
-
-
-#Solution - Recursive
 
 
 # Definition for a binary tree node.
@@ -45,8 +38,7 @@ class Solution:
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
-class Solution:
+class Solution2:
     def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
         if p is None and q is None:
             return True

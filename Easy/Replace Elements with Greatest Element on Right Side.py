@@ -6,8 +6,6 @@
 #Input: arr = [17,18,5,4,6,1]
 #Output: [18,6,6,6,1,-1]
 
-
-#Solution
 class Solution:
     def replaceElements(self, arr: List[int]) -> List[int]:
         maximum = -1
@@ -15,4 +13,3 @@ class Solution:
             
             arr[i], maximum = maximum, max(maximum, arr[i])
         return arr
-

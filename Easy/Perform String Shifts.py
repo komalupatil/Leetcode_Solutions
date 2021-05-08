@@ -28,8 +28,6 @@
 #0 <= shift[i][0] <= 1
 #0 <= shift[i][1] <= 100
 
-
-#Solution
 #Hint: equal number of left and right shifts can be eliminated
 #Hint: modulus of shift with length of string is the actual number of shifts need to be performed to avoid extra shift operations
 

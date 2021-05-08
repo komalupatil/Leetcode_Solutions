@@ -1,8 +1,6 @@
-#leetcode 66. plus one
+#Leetcode 66. plus one
 
-#Solution 1
-
-class Solution:
+class Solution1:
     def plusOne(self, digits: List[int]) -> List[int]:
         result = []
         l = len(digits)
@@ -13,9 +11,7 @@ class Solution:
             result.append(int(i))
         return result
 
-#Solution 2
-
-class Solution:
+class Solution2:
     def plusOne(self, digits: List[int]) -> List[int]:
         if len(digits) == 0:
             return []

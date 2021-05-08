@@ -34,15 +34,12 @@ class MinStack:
         else:
             return self.q[len(self.q)-1][1]
         
-
-
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
 # obj.push(x)
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.getMin()
-
 
 
 #Solution2 - using two stacks 
@@ -71,7 +68,6 @@ class MinStack:
     def getMin(self) -> int:
         return self.minStack[-1]
         
-
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
 # obj.push(x)

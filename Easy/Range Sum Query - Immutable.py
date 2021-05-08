@@ -1,6 +1,6 @@
 #Leetcode 303. Range Sum Query - Immutable
 
-#Solution
+#Solution1
 class NumArray():
     def __init__(self, nums):
         """
@@ -21,13 +21,12 @@ class NumArray():
             #result += self.nums[num]
         #return result
 
-
 # Your NumArray object will be instantiated and called as such:
 # obj = NumArray(nums)
 # param_1 = obj.sumRange(i,j)
 
-#Solution - Prefix Sum
 
+#Solution2 - Prefix Sum
 class NumArray:
 
     def __init__(self, nums: List[int]):
@@ -39,8 +38,6 @@ class NumArray:
     def sumRange(self, left: int, right: int) -> int:
         return self.prefixSum[right+1] - self.prefixSum[left]
         
-
-
 # Your NumArray object will be instantiated and called as such:
 # obj = NumArray(nums)
 # param_1 = obj.sumRange(left,right)

@@ -1,8 +1,5 @@
 #Leetcode 1021. Remove Outermost Parentheses
 
-#Related topic: Stack
-
-#Solution
 class Solution:
     def removeOuterParentheses(self, S: str) -> str:
         result = []

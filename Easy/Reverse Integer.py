@@ -1,7 +1,6 @@
-# Leetcode 7. Reverse Integer
+#Leetcode 7. Reverse Integer
 
-#Solution1
-class Solution:
+class Solution1:
     def reverse(self, x):
         if x < 0:
             return -1 * self.reverse(-x)
@@ -15,8 +14,7 @@ class Solution:
         else:
             return rev
 
-#Solution2
-class Solution:
+class Solution2:
     def reverse(self, x: int) -> int:
         if x < 0:
             return -1 * self.reverse(-x)

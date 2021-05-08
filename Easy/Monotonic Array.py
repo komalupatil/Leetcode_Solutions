@@ -1,6 +1,5 @@
 #Leetcode 896. Monotonic Array
 
-#Solution
 class Solution:
     def isMonotonic(self, A: List[int]) -> bool:
         if len(A) == 0:

@@ -1,7 +1,5 @@
 #Leetcode 203. Remove Linked List Elements
 
-#Solution
-
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

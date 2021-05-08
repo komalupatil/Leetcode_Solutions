@@ -1,7 +1,6 @@
 #Leetcode 268. Missing Number
 
-#solution1
-class Solution:
+class Solution1:
     def missingNumber(self, nums):
         """
         :type nums: List[int]
@@ -14,8 +13,7 @@ class Solution:
             if number not in nums:
                 return number
 
-#solution2
-class Solution:
+class Solution2:
     def missingNumber(self, nums):
         """
         :type nums: List[int]
@@ -30,8 +28,7 @@ class Solution:
                 i += 1
         return i
 
-#solution3
-class Solution:
+class Solution3:
     def missingNumber(self, nums):
         """
         :type nums: List[int]
@@ -45,8 +42,8 @@ class Solution:
         return int(missing_num)
 
 
-#Solution4 using cyclic sort (time complexity o(n) and space complexity o(1))
-class Solution:
+#using cyclic sort (time complexity o(n) and space complexity o(1))
+class Solution4:
     def missingNumber(self, nums: List[int]) -> int:
         i = 0
         while i < len(nums):

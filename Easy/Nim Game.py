@@ -1,3 +1,5 @@
+#Leetcode 292. Nim Game
+
 class Solution:
     def canWinNim(self, n):
         """

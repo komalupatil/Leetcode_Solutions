@@ -1,8 +1,6 @@
 #leetcode 1047. Remove All Adjacent Duplicates In String
 
-#solution1
-
-class Solution:
+class Solution1:
     def removeDuplicates(self, S: str) -> str:
         i = 0
         while i < len(S)-1:
@@ -15,9 +13,7 @@ class Solution:
             i +=1
         return S
 
-#solution2
-
-class Solution:
+class Solution2:
     def removeDuplicates(self, S: str) -> str:
         dout = []
         for s in S:
@@ -27,9 +23,7 @@ class Solution:
                 dout.append(s)
         return "".join(dout)
 
-#Solution 3
-
-class Solution:
+class Solution3:
     def removeDuplicates(self, S: str) -> str:
         res = []
         

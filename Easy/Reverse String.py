@@ -1,7 +1,6 @@
 # Leetcode 344. Reverse String
 
-#Solution1
-class Solution:
+class Solution1:
     def reverseString(self, s):
         """
         :type s: str
@@ -14,8 +13,7 @@ class Solution:
             i = i-1
         return string2
 
-#Solution2
-class Solution:
+class Solution2:
     def reverseString(self, s):
         """
         :type s: str
@@ -26,8 +24,7 @@ class Solution:
             string += s[i]
         return string
 
-#Solution3
-class Solution:
+class Solution3:
     def reverseString(self, s):
         """
         :type s: str
@@ -37,9 +34,7 @@ class Solution:
         s = s[::-1]
         return s
 
-
-#solution4
-class Solution:
+class Solution4:
     def reverseString(self, s):
         """
         :type s: str
@@ -54,10 +49,9 @@ class Solution:
             string += stack.pop()
         return string
 
-#Solution5
 #Input: ["h","e","l","l","o"]
 #Output: ["o","l","l","e","h"]
-class Solution:
+class Solution5:
     def reverseString(self, s: List[str]) -> None:
         """
         Do not return anything, modify s in-place instead.

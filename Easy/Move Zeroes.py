@@ -1,8 +1,6 @@
 #Leetcode 283. Move Zeroes
 
-#Solution 1
-
-class Solution:
+class Solution1:
     def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -15,10 +13,7 @@ class Solution:
         return nums
 
 
-#Solution 2
-
-
-class Solution:
+class Solution2:
     def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.

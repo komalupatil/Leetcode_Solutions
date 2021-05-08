@@ -1,9 +1,6 @@
 #Leetcode 234. Palindrome Linked List
 
-#Topic: Two Pointers, combine reverse and middle of linked list
-
-#Solution
-
+#Approach: Two Pointers, combine reverse and middle of linked list
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

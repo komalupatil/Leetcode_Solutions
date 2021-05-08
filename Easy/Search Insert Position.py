@@ -1,6 +1,5 @@
 #Leetocde 35. Search Insert Position
 
-#Solution - Binary Search (array is sorted)
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
         l = 0

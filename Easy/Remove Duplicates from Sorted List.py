@@ -1,6 +1,5 @@
-# Leetcode 83
+# Leetcode 83. Remove Duplicates from Sorted List
 
-#Solution
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):

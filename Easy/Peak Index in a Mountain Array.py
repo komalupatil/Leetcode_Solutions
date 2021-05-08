@@ -1,7 +1,5 @@
 #Leetcode 852. Peak Index in a Mountain Array
 
-#Solution - binary search
-
 class Solution:
     def peakIndexInMountainArray(self, arr: List[int]) -> int:
         l = 0

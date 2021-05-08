@@ -1,7 +1,5 @@
 #Leetcode 266. Palindrome Permutation
 
-#Solution
-
 class Solution:
     def canPermutePalindrome(self, s: str) -> bool:
         if len(s) == 0:

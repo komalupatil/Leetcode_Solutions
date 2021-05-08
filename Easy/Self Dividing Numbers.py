@@ -1,7 +1,6 @@
 #Leetcode 728. Self Dividing Numbers
 
-#Solution1
-class Solution:
+class Solution1:
     def selfDividingNumbers(self, left: int, right: int) -> List[int]:
         result= []
         for i in range(left, right+1):
@@ -17,15 +16,7 @@ class Solution:
         return result
 
 
-
-#Solution2
-def is_self_dividing(x):
-        s = str(x)
-        for i in s:
-            if i=="0" or x%int(i)!=0:
-                return False
-        return True
-class Solution:
+class Solution2:
     
     def selfDividingNumbers(self, left: int, right: int) -> List[int]:
         result = []
@@ -33,4 +24,10 @@ class Solution:
             if is_self_dividing(num):
                 result.append(num)
         return result
+def is_self_dividing(x):
+        s = str(x)
+        for i in s:
+            if i=="0" or x%int(i)!=0:
+                return False
+        return True
                 

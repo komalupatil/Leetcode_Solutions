@@ -1,13 +1,11 @@
 #Leetcode 657. Robot Return to Origin
 
-#Solution1
-class Solution:
+class Solution1:
     def judgeCircle(self, moves: str) -> bool:
         return moves.count('L') == moves.count('R') and moves.count('U') == moves.count('D')
         
 
-#Solution2
-class Solution:
+class Solution2:
     def judgeCircle(self, moves: str) -> bool:
         x = y = 0
         for move in moves:

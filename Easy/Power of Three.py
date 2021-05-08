@@ -1,7 +1,5 @@
 #Leetcode 326. Power of Three
 
-#Solution
-
 class Solution:
     def isPowerOfThree(self, n: int) -> bool:
         if n < 1:

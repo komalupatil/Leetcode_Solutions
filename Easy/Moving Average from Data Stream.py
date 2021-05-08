@@ -21,15 +21,12 @@ class MovingAverage:
             self.sum -= self.array.pop(0)
         return self.sum/len(self.array)
 
-
 # Your MovingAverage object will be instantiated and called as such:
 # obj = MovingAverage(size)
 # param_1 = obj.next(val)
 
 
-
 #Solution2 Using deque from collections module python
-
 class MovingAverage:
 
     def __init__(self, size: int):
@@ -44,10 +41,6 @@ class MovingAverage:
         queue = self.two_way_queue
         queue.append(val)
         return float(sum(queue))/len(queue)
-        
-            
-        
-
 
 # Your MovingAverage object will be instantiated and called as such:
 # obj = MovingAverage(size)

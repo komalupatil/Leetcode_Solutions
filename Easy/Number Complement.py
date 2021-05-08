@@ -1,7 +1,5 @@
 #Leetcode 476. Number Complement
 
-#Solution
-
 class Solution:
     def findComplement(self, num: int) -> int:
         temp = num

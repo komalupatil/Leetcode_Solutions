@@ -1,6 +1,5 @@
 #Leetcode 235. Lowest Common Ancestor of a Binary Search Tree
 
-#Solution
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):

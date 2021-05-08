@@ -1,7 +1,6 @@
 #Leetcode 496. Next Greater Element I
 
-#Solution - monotonic stack, next greater so creater decreasing stack and keep track of it in hashable
-
+#monotonic stack, next greater so create decreasing stack and keep track of it in hashable
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
         

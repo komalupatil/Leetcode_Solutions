@@ -1,7 +1,6 @@
 #Leetcode 252. Meeting Room
 
 #Conflicting appointments (educative.io)
-
 class Solution:
     def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
         

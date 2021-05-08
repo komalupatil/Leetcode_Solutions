@@ -1,11 +1,8 @@
 #Leetcode 1544. Make The String Great
 
-
-#Solution
 class Solution:
     def makeGood(self, s: str) -> str:
-        result = []
-        
+        result = []  
         for i in s:
             if not result:
                 result.append(i)

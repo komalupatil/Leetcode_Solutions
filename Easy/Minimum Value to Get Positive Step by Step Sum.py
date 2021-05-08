@@ -1,7 +1,5 @@
 #Leetcode 1413. Minimum Value to Get Positive Step by Step Sum
 
-#Solution
-
 class Solution:
     def minStartValue(self, nums: List[int]) -> int:
         s = 0

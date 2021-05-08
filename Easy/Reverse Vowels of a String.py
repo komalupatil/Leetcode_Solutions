@@ -1,10 +1,5 @@
 #Leetcode 345. Reverse Vowels of a String
 
-#Topic: Two Pointers
-
-#Solution
-
-
 class Solution:
     def reverseVowels(self, s: str) -> str:
         s = list(s)

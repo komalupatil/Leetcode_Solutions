@@ -18,4 +18,3 @@ nums1 = [0,0,1,1,1,2,2,3,3,4]
 removeDuplicates = removeduplicates()
 result = removeDuplicates.rem_dup(nums1)
 print(result)
-print(nums1[0:result])

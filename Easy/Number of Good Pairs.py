@@ -1,9 +1,6 @@
 #Leetcode 1512. Number of Good Pairs
 
-#Topics: Hash Table
-
-#Solution1
-class Solution:
+class Solution1:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         d = {}
         for num in nums:
@@ -16,8 +13,7 @@ class Solution:
                 result += (val*(val-1)//2)
         return result
 
-#Solution2
-class Solution:
+class Solution2:
     def numIdenticalPairs(self, nums: List[int]) -> int:
         d = {}
         result  = 0

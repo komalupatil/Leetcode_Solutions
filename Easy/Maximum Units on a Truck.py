@@ -1,7 +1,5 @@
 #Leetcode 1710. Maximum Units on a Truck
 
-#Solution
-
 class Solution:
     def maximumUnits(self, boxTypes: List[List[int]], truckSize: int) -> int:
         res = 0

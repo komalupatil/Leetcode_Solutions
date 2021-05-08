@@ -2,11 +2,7 @@
 
 class Solution1:
     def busyStudent(self, startTime: List[int], endTime: List[int], queryTime: int) -> int:
-        p1 = 0
-        p2 = 0
-        
-        res = 0
-        
+        p1,p2,res = 0,0,0
         while p1<len(startTime) and p2<len(endTime):
             if startTime[p1] <= queryTime <= endTime[p2]:
                 res += 1
