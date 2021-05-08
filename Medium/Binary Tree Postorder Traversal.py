@@ -1,13 +1,13 @@
 #Leetcode 145. Binary Tree Postorder Traversal
 
-#Solution - Recursive 
+#Recursive 
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
+class Solution1:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         res = []
         self.helper(root, res)
@@ -19,14 +19,14 @@ class Solution:
             self.helper(node.right, result)
             result.append(node.val)
 
-#Solution - Iterative
+#Iterative
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
+class Solution2:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         res = []   
         stack = [root]

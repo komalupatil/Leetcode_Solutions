@@ -1,7 +1,6 @@
 #Leetcode 739. Daily Temperatures
 
-#Solution - Monotonic Stack
-# build a decreasing stack while finding next greater/larger element
+#Monotonic Stack - build a decreasing stack while finding next greater/larger element
 class Solution:
     def dailyTemperatures(self, T: List[int]) -> List[int]:
         if len(T) == 0:

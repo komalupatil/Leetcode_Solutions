@@ -1,7 +1,6 @@
 #Leetcode 853. Car Fleet
 
-#Solution1
-class Solution:
+class Solution1:
     def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
         stack = []
         for pos, s in sorted(zip(position, speed))[::-1]:
@@ -14,8 +13,7 @@ class Solution:
             print(stack)
         return len(stack)
 
-#Solution2
-class Solution:
+class Solution2:
     def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
         timeToTarget = [float(target-pos)/s for pos, s in sorted(zip(position,speed))]
         result = 0

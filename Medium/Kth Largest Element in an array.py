@@ -1,7 +1,7 @@
 #Leetcode 215. Kth Largest Element in an array
-# 
-# Solution using min heap
-class Solution:
+ 
+#min heap
+class Solution1:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         heap = []
         for num in nums:
@@ -10,8 +10,8 @@ class Solution:
             heapq.heappop(heap)
         return heapq.heappop(heap)
 
-#Solution - maxHeap
-class Solution:
+#maxHeap
+class Solution2:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         h = []
         for num in nums:

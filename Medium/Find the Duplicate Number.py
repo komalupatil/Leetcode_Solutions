@@ -1,7 +1,6 @@
 #Leetcode 287. Find the Duplicate Number
-
-#Solution - extra space 
-class Solution:
+ 
+class Solution1:
     def findDuplicate(self, nums: List[int]) -> int:
         d = {}
         for num in nums:
@@ -10,9 +9,8 @@ class Solution:
             if d[key] > 1:
                 return key
 
-#Solution - binary search
 #https://leetcode.com/problems/find-the-duplicate-number/discuss/358670/BS-BinarySearch-with-very-detailed-explanation
-class Solution:
+class Solution2:
     def findDuplicate(self, nums: List[int]) -> int:
         low = 1
         high = len(nums) - 1

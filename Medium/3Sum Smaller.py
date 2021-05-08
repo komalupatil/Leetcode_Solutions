@@ -11,8 +11,6 @@
 #[-2, 0, 1]
 #[-2, 0, 3]
 
-
-#Solution
 class Threesum:
     def solution(self, nums, target):
         
@@ -40,6 +38,7 @@ nums = [-2,0,1,3]
 target = 2
 solve1 = solve.solution(nums, target)
 print(solve1)
+
 nums1 = [5,1,3,4,7]
 target1 = 12
 solve2 = solve.solution(nums1, target1)

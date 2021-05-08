@@ -1,6 +1,6 @@
 #avg of contiguous subarrays of size k optimal O(n)
 
-#solution1 o(n)
+#solution1
 def avg_of_subarrays(K, arr):
     result = []
     windowSum, windowStart = 0.0, 0

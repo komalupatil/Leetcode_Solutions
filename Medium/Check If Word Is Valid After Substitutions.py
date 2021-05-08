@@ -1,6 +1,5 @@
 #Leetcode 1003. Check If Word Is Valid After Substitutions
 
-#Solution
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []

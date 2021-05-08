@@ -1,9 +1,8 @@
 #Leetcode 55. Jump Game
 
-#Solution - jump taken must be atleast equal to the index
+#jump taken must be atleast equal to the index
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        
         reachjump = 0
         
         for i in range(len(nums)):

@@ -1,7 +1,8 @@
-#leetcode 34
+#Leetcode 34. Find First and Last Position of Element in Sorted Array
+
 #Find First and Last Position of Element in Sorted Array
 #do binary search twice
-class Solution:
+class Solution1:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         def binarySearchLeft(nums1, target1):
             left, right = 0, len(nums1) - 1
@@ -26,9 +27,8 @@ class Solution:
         left, right = binarySearchLeft(nums, target), binarySearchRight(nums, target)
         return (left, right) if left <= right else [-1, -1]
         
-#Solution - follow (https://leetcode.com/discuss/general-discussion/1089533/An-approach-to-writing-bug-free-Binary-Search-code)
-            
-class Solution:
+#follow (https://leetcode.com/discuss/general-discussion/1089533/An-approach-to-writing-bug-free-Binary-Search-code)        
+class Solution2:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         
         def findFirst(nums, target):

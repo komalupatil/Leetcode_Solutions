@@ -1,12 +1,9 @@
 #Leetcode 986. Interval List Intersections
 
-#Solution1
-class Solution:
-    def intervalIntersection(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]:
-        
+class Solution1:
+    def intervalIntersection(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]: 
         a = 0
         b = 0
-        
         intervals = []
         while a < len(A) and b < len(B):
             interval_starting, interval_ending = max(A[a][0], B[b][0]), min(A[a][1], B[b][1])
@@ -17,13 +14,10 @@ class Solution:
             if A[a][1] < B[b][1]:
                 a+=1
             else:
-                b+=1
-            
+                b+=1    
         return intervals
 
-
-#Solution2
-class Solution:
+class Solution2:
     def intervalIntersection(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]:
         i,j = 0,0
         result = []
@@ -38,7 +32,6 @@ class Solution:
             if A[i][1] < B[j][1]:
                 i+=1
             else:
-                j+=1
-            
+                j+=1  
         return result
                 

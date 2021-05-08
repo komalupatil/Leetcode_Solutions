@@ -4,8 +4,7 @@
 #For k = 2, o/p is ‘bdbdbbd’
 #For k = 3, o/p is ‘bcbdbdbbdcd’
 
-
-#Pattern : Sliding Window
+#Approach : Sliding Window
 class Solution:
     def kUniqueCharacters(self, str):
         if len(str) == 0 or str == None:
@@ -14,7 +13,6 @@ class Solution:
         windowStart = 1
         maxWindow = ""
         maxWindowStart = 0
-        
         maxLength = float('-inf')
         
         d = {}

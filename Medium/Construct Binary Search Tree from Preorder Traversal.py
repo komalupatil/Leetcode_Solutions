@@ -1,6 +1,6 @@
 #Leetocde 1008. Construct Binary Search Tree from Preorder Traversal
 
-#Solution1 - recursion
+#recursion
 #Convert preorder into inorder by sorting it. then find the index root in inorder and do the recursion
 # Definition for a binary tree node.
 # class TreeNode:
@@ -8,7 +8,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-class Solution:
+class Solution1:
     def bstFromPreorder(self, preorder: List[int]) -> TreeNode:
         
         inorder = sorted(preorder)      
@@ -29,14 +29,14 @@ class Solution:
         root.right = self.helper(preorder[rootIndex+1:], inorder[rootIndex+1:])   
         return root
 
-#SOlution2 - Interative approach
+#Interative approach
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
-class Solution:
+class Solution2:
     def bstFromPreorder(self, preorder: List[int]) -> TreeNode:
         
         root = TreeNode(preorder[0])       
@@ -54,14 +54,14 @@ class Solution:
         return root
 
 
-#SOlution3 - recursive without converting to inorder
+#recursive without converting to inorder
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
-class Solution:
+class Solution3:
 
     index = 0
 

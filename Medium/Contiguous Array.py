@@ -1,6 +1,5 @@
 #Leetcode 525. Contiguous Array
 
-#Solution using hashmap(dict)
 class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
         count = 0

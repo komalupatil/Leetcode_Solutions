@@ -1,6 +1,5 @@
 #Leetcode 380. Insert Delete GetRandom O(1)
 
-#Solution
 class RandomizedSet:
 
     def __init__(self):
@@ -40,7 +39,6 @@ class RandomizedSet:
         Get a random element from the set.
         """
         return self.nums[random.randint(0, len(self.nums)-1)]
-        
 
 
 # Your RandomizedSet object will be instantiated and called as such:

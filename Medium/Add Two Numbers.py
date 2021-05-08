@@ -1,6 +1,5 @@
-# Leetcode 2. Add Two Numbers
+#Leetcode 2. Add Two Numbers
 
-#Solution
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

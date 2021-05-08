@@ -1,14 +1,13 @@
 #Leetcode 94. Binary Tree Inorder Traversal
 
-#Solution1 - recursive
+#recursive
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
-class Solution:
+class Solution1:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         output = []
         self.inorder(root, output)
@@ -20,14 +19,14 @@ class Solution:
             self.inorder(root.right, output)
 
 
-#Solution2 - Iterative 
+#Iterative 
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
+class Solution2:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         res, stack = [], []
         

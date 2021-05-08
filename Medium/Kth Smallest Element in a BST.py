@@ -1,15 +1,13 @@
 #Leetcode 230. Kth Smallest Element in a BST
 
-
-#Soltuion1 - use inorder since it gives sorted result
-
+#use inorder since it gives sorted result
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
+class Solution1:
     def kthSmallest(self, root: TreeNode, k: int) -> int:
         
         def in_order(root):
@@ -23,15 +21,13 @@ class Solution:
         return in_order(root)[k-1]
 
 
-#Solution2
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
+class Solution2:
     def kthSmallest(self, root: TreeNode, k: int) -> int:
         self.k=k
         self.res= None

@@ -1,6 +1,5 @@
 #Leetcode 103. Binary Tree Zigzag Level Order Traversal
 
-#Solution1
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -8,7 +7,7 @@
 #         self.left = left
 #         self.right = right
 from collections import deque
-class Solution:
+class Solution1:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
         if not root:
             return []
@@ -28,14 +27,13 @@ class Solution:
             flag *= -1
         return result
 
-#Solution2
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
+class Solution2:
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
         result = []
         if not root:
