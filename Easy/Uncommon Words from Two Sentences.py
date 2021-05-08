@@ -1,7 +1,6 @@
 #Leetcode 884. Uncommon Words from Two Sentences
 
-#Solution1
-class Solution:
+class Solution1:
     def uncommonFromSentences(self, A, B):
         """
         :type A: str
@@ -22,9 +21,8 @@ class Solution:
                 listi.append(k)
         return listi
 
-#Solution2
 
-class Solution:
+class Solution2:
     def uncommonFromSentences(self, A: str, B: str) -> List[str]:
         d = {}
         

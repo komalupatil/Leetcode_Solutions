@@ -1,7 +1,6 @@
 #Leetcode 290. Word Pattern
 
-#Solution - similar to Leetcode 205. Isomorphic Strings
-
+#similar to Leetcode 205. Isomorphic Strings
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         if not pattern or not s:

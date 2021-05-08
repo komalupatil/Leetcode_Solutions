@@ -1,7 +1,6 @@
 #Leetcode 20. Valid Parentheses
 
-#Solution1 
-class Solution:
+class Solution1:
     def isValid(self, s: str) -> bool:
         stack = []
         for i in s:
@@ -19,8 +18,7 @@ class Solution:
         else:
             return True
 
-#Solution2
-class Solution:
+class Solution2:
     def isValid(self, s: str) -> bool:
         d = {'(':')', '[':']', '{':'}'}
         stack = []

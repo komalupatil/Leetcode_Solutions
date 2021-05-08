@@ -1,6 +1,5 @@
 #Leetcode 1629. Slowest Key
 
-#Solution
 class Solution:
     def slowestKey(self, releaseTimes: List[int], keysPressed: str) -> str:
         t = releaseTimes[0] - 0

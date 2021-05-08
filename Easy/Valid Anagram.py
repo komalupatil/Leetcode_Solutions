@@ -1,7 +1,6 @@
-#leetcode 242 Valid Anagram
+#Leetcode 242 Valid Anagram
 
-#Solution1
-class Solution:
+class Solution1:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
@@ -16,10 +15,7 @@ class Solution:
         if len(l) == 0:
             return True
 
-
-#solution2
-# using sort function
-class Solution:
+class Solution2:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False

@@ -1,7 +1,6 @@
-#leetcode 804. Unique Morse Code Words
+#Leetcode 804. Unique Morse Code Words
 
-#Solution1
-class Solution:
+class Solution1:
     def uniqueMorseRepresentations(self, words: List[str]) -> int:
         codes = {"a":".-", "b":"-...", "c":"-.-.", "d":"-..", "e":".", "f":"..-.", "g":"--.", "h":"....", "i":"..", "j":".---", "k":"-.-", "l":".-..", "m":"--", "n":"-.", "o":"---", "p":".--.", "q":"--.-", "r":".-.", "s":"...", "t":"-", "u":"..-", "v":"...-", "w":".--", "x":"-..-", "y":"-.--", "z":"--.."}
         result = set()
@@ -14,9 +13,7 @@ class Solution:
                 result.add(morse)
         return len(result)
 
-#Solution2
-
-class Solution:
+class Solution2:
     def uniqueMorseRepresentations(self, words: List[str]) -> int:
         d = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--",
              "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]

@@ -1,6 +1,5 @@
 #Leetcode 1099. Two Sum Less Than K
 
-#Solution - using two pointers
 class Solution:
     def twoSumLessThanK(self, nums, k):
         maximum = -1

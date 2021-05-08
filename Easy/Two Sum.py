@@ -1,7 +1,6 @@
-#leetcode 1. Two Sum
+#Leetcode 1. Two Sum
 
-#solution1
-class Solution:
+class Solution1:
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
@@ -13,9 +12,7 @@ class Solution:
                 if (nums[i])+nums[j] == target:
                     return (i, j)
 
-
-#solution2
-class Solution:
+class Solution2:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         d = {}
         for i, n in enumerate(nums):

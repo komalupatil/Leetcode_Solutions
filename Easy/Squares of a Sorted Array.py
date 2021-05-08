@@ -1,13 +1,11 @@
 #Leetcode 977. Squares of Sorted Array 
 
-#Solution1 o(nlog(n))
-class Solution:
+class Solution1:
     def sortedSquares(self, A: List[int]) -> List[int]:
         return sorted(i**2 for i in A)
 
 
-#o(n) solution usig two pointers
-class Solution:
+class Solution2:
     def sortedSquares(self, A: List[int]) -> List[int]:
         if len(A) == 1:
             return [A[0]*A[0]]

@@ -1,4 +1,5 @@
-#leetcode 136 - single number 
+#Leetcode 136. single number 
+
 #using XOR logic
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:

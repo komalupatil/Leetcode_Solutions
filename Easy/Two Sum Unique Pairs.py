@@ -1,7 +1,7 @@
-#two sum unique pairs
+#Given an int array nums and an int target, find how many unique pairs in the array such that their sum is equal to target. 
+#Return the number of pairs.
 
-#solution1
-
+#Solution1
 class Uniquepairs:
     def TwoSumUniquePairs(self, nums, target):
         nums.sort()
@@ -39,7 +39,6 @@ print(result3)
 
 
 #solution2
-
 class Uniquepairs():
     def TwoSumUniquePairs(self, nums, target):
         result = {}

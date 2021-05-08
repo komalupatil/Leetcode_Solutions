@@ -1,27 +1,25 @@
 #Leetcode 404. Sum of Left Leaves
 
-#Solution - DFS recursive
+#DFS
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
+class Solution1:
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
         if not root:
             return 0
-        
+            
         ans = 0
         if root.left != None and root.left.left == None and root.left.right == None:
             ans += root.left.val       
-        
+
         ans += self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right)
-        
         return ans
 
-
-#Solution - BFS recursive
+#BFS
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -29,7 +27,7 @@ class Solution:
 #         self.left = left
 #         self.right = right
 from collections import deque
-class Solution:
+class Solution2:
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
         if root == None:
             return 0
