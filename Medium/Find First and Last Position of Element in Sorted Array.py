@@ -1,6 +1,5 @@
 #Leetcode 34. Find First and Last Position of Element in Sorted Array
 
-#Find First and Last Position of Element in Sorted Array
 #do binary search twice
 class Solution1:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
@@ -64,4 +63,3 @@ class Solution2:
         result[0] = findFirst(nums, target)
         result[1] = findLast(nums, target)
         return result
-        
