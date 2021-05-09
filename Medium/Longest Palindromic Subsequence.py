@@ -1,6 +1,6 @@
 #Leetcode 516. Longest Palindromic Subsequence
 
-#Solution - similar to logest common subsequence, in this case, seccond string to compare will be the reverse of given string
+#similar to longest common subsequence, in this case, seccond string to compare will be the reverse of given string
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
         s1 = s

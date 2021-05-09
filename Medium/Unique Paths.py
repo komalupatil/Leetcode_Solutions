@@ -1,7 +1,5 @@
 #Leetcode 62. Unique Paths
 
-#Solution - using DP - similar to Minimum path sum
-
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         

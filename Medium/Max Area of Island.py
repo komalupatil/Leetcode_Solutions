@@ -1,7 +1,5 @@
 #Leetcode 695. Max Area of Island
 
-#SOlution
-
 class Solution:
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
         count = 0

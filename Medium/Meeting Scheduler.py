@@ -1,6 +1,6 @@
 #Leetcode 1229. Meeting Scheduler
-#based on leetcode 986 interval list intersections
 
+#based on leetcode 986 interval list intersections
 class Solution:
     def minAvailableDuration(self, slots1: List[List[int]], slots2: List[List[int]], duration: int) -> List[int]:
         i,j= 0,0

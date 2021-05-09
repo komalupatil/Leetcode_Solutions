@@ -1,6 +1,5 @@
 #similar to leetcode 189 Rotate array (rotating to the left instead of right)
 
-#solution1
 #using list indexing
 def rotate_array_left(nums, k):
     k = k%len(nums)
@@ -14,8 +13,6 @@ def main():
 main()
     
 
-
-#solution2
 #using reverse function
 class Solution:
     

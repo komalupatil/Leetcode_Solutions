@@ -1,6 +1,5 @@
 #Leetcode 713. Subarray Product Less Than K
 
-#Solution
 class Solution:
     def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
         left = 0

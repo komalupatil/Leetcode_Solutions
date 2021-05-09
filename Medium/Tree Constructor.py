@@ -1,4 +1,5 @@
 #coderbyte medium
+
 #determine if an array of integer pairs can form a binary tree properly
 #There is one root node, and every child node has parent
 #Example: Input: ["(1,2)", "(2,4)", "(5,7)", "(7,2)", "(9,5)"]

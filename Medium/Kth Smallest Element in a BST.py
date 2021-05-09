@@ -7,18 +7,19 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution1:
+class Solution:
     def kthSmallest(self, root: TreeNode, k: int) -> int:
-        
+        res = []
         def in_order(root):
             if root== None:
-                return []
-            in_left = in_order(root.left)
-            root_val = [root.val]
-            in_right = in_order(root.right)
-            print(in_left + root_val + in_right)
-            return in_left + root_val + in_right
-        return in_order(root)[k-1]
+                return res
+            if root:
+                if root.left: in_order(root.left)
+                res.append(root.val)
+                if root.right: in_order(root.right)
+            
+        in_order(root)
+        return res[k-1]
 
 
 # Definition for a binary tree node.

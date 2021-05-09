@@ -1,8 +1,5 @@
 #Leetcode 221. Maximal Square
 
-
-#Solution
-
 class Solution:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         m= len(matrix)   

@@ -1,7 +1,6 @@
-#Leetcode
+#Leetcode 581. Shortest Unsorted Continuous Subarray
 
-#Solution - monotonic stack
-
+#monotonic stack
 #find min left index while doing increasing mono stack from start
 #find max right index while doing decreasing mono stack from end
 class Solution:

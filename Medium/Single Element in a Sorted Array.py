@@ -1,9 +1,6 @@
 #Leetcode 540. Single Element in a Sorted Array
 
-
-#Solution1 - O(n)
-
-class Solution:
+class Solution1:
     def singleNonDuplicate(self, nums: List[int]) -> int:
         d = {}
         for i in nums:
@@ -15,9 +12,8 @@ class Solution:
             if v == 1:
                 return k
         
-#Solution2 O(log(n)) and O(1) space - using binary search
-
-class Solution:
+#O(log(n)) and O(1) space - using binary search
+class Solution2:
     def singleNonDuplicate(self, nums: List[int]) -> int:
         left = 0
         right = len(nums) -1

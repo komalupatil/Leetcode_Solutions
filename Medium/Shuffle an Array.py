@@ -1,13 +1,10 @@
 #Leetcode 384. Shuffle an Array
 
-#Solution1
-
 import random
-class Solution:
+class Solution1:
 
     def __init__(self, nums: List[int]):
         self.nums = nums
-        
 
     def reset(self) -> List[int]:
         """
@@ -25,21 +22,18 @@ class Solution:
             ans[i], ans[j] = ans[j], ans[i]
         return ans
 
-
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)
 # param_1 = obj.reset()
 # param_2 = obj.shuffle()
 
-#Solution2
 
 import random
-class Solution:
+class Solution2:
 
     def __init__(self, nums: List[int]):
         self.nums = nums
         
-
     def reset(self) -> List[int]:
         """
         Resets the array to its original configuration and return it.
@@ -55,7 +49,6 @@ class Solution:
             j = random.randrange(0, i+1)
             ans[i], ans[j] = ans[j], ans[i]
         return ans
-
 
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)

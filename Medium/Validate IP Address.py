@@ -1,7 +1,5 @@
 #Leetcode 468. Validate IP Address
 
-#Solution
-
 class Solution:
     def validate_IPv4(self, IP):
         nums = IP.split('.')

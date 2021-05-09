@@ -1,8 +1,7 @@
 #Leetcode 1019. Next Greater Node In Linked List
 
-#Solution - Monotonic stack
+#Monotonic stack
 # build a decreasing stack while finding next greater/larger element
-
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

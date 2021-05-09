@@ -1,7 +1,5 @@
 #Leetcode 64. Minimum Path Sum
 
-#Solution - using DP
-
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
         if len(grid) == 0:

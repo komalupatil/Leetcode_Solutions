@@ -1,6 +1,6 @@
-#leetcode 3
-#using sliding window pattern
+#Leetcode 3. Longest Substring Without Repeating Characters
 
+#using sliding window pattern
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         d = {}

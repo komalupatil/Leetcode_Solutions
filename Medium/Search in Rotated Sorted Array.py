@@ -1,7 +1,5 @@
 #Leetcode 33. Search in Rotated Sorted Array
 
-#Solution - using binary search
-        
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         l = 0
@@ -19,7 +17,7 @@ class Solution:
                 else:
                     l = mid + 1
             else:
-                if nums[mid] < target and target <= nums[r]:
+                if  target <= nums[r] and target > nums[mid]:
                     l = mid + 1
                 else:
                     r = mid -1

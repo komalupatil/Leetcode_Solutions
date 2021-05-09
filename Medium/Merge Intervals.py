@@ -1,6 +1,5 @@
 #Leetcode 56. Merge Intervals
 
-
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         if len(intervals) <2:

@@ -1,6 +1,5 @@
 #Leetcode 1249. Minimum Remove to Make Valid Parentheses
 
-#Solution
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
         stack = []

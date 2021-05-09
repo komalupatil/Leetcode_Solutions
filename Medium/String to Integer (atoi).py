@@ -1,7 +1,5 @@
 #Leetcode 8. String to Integer (atoi)
 
-#Solution
-
 class Solution:
     def myAtoi(self, str: str) -> int:
         if len(str) == 0:

@@ -1,13 +1,7 @@
-# Leetcode 189 Rotate array
+#Leetcode 189. Rotate array
+
 #rotate array to the right
-
-#using list indexing
-
-#solution1
-
-class Solution:
-    
-
+class Solution1: 
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -15,9 +9,7 @@ class Solution:
         k = k% len(nums)
         nums[:] = nums[len(nums)-k:] + nums[:len(nums)-k]
 
-#solution2
-#using reverse function
-class Solution:
+class Solution2:
     #reverse function
     def rev(self, nums, s, e):
             while(s < e):

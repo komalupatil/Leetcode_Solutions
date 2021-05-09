@@ -16,9 +16,6 @@
 #   9 10
 # "11" 12
 
-
-
-#Solution
 class Solution:
     def SeatedStudents(self, arr):
         
@@ -42,7 +39,6 @@ class Solution:
             
         return count
 
-
     def isOccupied(self, desk, occupied, totaldesks):
         return desk> totaldesks or desk in occupied
 
@@ -50,8 +46,3 @@ out = Solution()
 arr1 = [12, 2, 6, 7, 11]
 output1 = out.SeatedStudents(arr1)
 print(output1)
-
-
-
-
-

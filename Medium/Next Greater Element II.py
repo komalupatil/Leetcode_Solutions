@@ -1,10 +1,8 @@
 #Leetcode 503. Next Greater Element II
 
-#Solution - Monotonic Stack
-
+#Monotonic Stack
 # build a decreasing stack while finding next greater/larger element
 # for circular array, loop through 2 times len(array) and push i%len(array) to stack always
-
 class Solution:
     def nextGreaterElements(self, nums: List[int]) -> List[int]:
         if len(nums) == 0:

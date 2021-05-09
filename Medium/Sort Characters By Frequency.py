@@ -1,15 +1,12 @@
 #Leetcode 451. Sort Characters By Frequency
 
-#Solution - using bucket sort - similar to Top K frequent elements
-
-class Solution:
+#using bucket sort - similar to Top K frequent elements
+class Solution1:
     def frequencySort(self, s: str) -> str:
-        
         if len(s) == 0:
             return ""
         
         d = {}
-        
         for char in s:
             if char in d:
                 d[char] +=1
@@ -17,8 +14,6 @@ class Solution:
                 d[char] = 1
         
         buckets = [[] for _ in s]
-        
-        
         for key, value in d.items():
             buckets[value-1].append(key*value) #to print the char by freq doing key*value here
         
@@ -29,15 +24,12 @@ class Solution:
         return res
 
 
-#Solution2
-
-class Solution:
+class Solution2:
     def frequencySort(self, s: str) -> str:
         if len(s) == 0:
             return ""
         
         d = {}
-        
         for char in s:
             if char in d:
                 d[char] += 1
@@ -51,8 +43,7 @@ class Solution:
             
         return res
 
-#SOlution3 - using maxHeap
-class Solution:
+class Solution3:
     def frequencySort(self, s: str) -> str:
         charFreq = {}
         

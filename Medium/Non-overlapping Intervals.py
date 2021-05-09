@@ -1,7 +1,6 @@
 #Leetcode 435. Non-overlapping Intervals
 
-#Solution
-class Solution:
+class Solution1:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
         intervals.sort(key=lambda x:x[0]) #sort by start time
         count = 0
@@ -15,8 +14,7 @@ class Solution:
                 currEnd = intervals[i][1]
         return count
 
-#Solution2
-class Solution:
+class Solution2:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
         intervals.sort(key=lambda x:x[1]) #sort by end time
         count = 0

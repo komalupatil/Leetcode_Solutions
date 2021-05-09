@@ -1,6 +1,5 @@
 #Leetcode 424. Longest Repeating Character Replacement
 
-#Solution
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         maxLength, windowStart, max_repeating_letter_count = 0,0,0

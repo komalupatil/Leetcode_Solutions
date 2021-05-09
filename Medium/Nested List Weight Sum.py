@@ -1,4 +1,5 @@
 #Leetcode 339. Nested List Weight Sum
+
 #do leetcode 690 first to understand this
 # """
 # This is the interface that allows for creating nested lists.

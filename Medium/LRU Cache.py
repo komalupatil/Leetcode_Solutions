@@ -1,7 +1,6 @@
 #Leetcode 146. LRU Cache
 
-#Solution- Doubly linked list and hash map
-
+#Solution1
 class dll(object):
     
     def __init__(self, key, val):
@@ -60,10 +59,6 @@ class LRUCache(object):
                 del self.hash[remove.key]
                 self.length -= 1
             
-                
-        
-
-
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
 # param_1 = obj.get(key)
@@ -79,8 +74,7 @@ class Node:
         self.prev = None
         self.next = None
         
-class LRUCache:
-    
+class LRUCache:   
 
     def __init__(self, capacity: int):
         self.capacity = capacity
@@ -130,9 +124,6 @@ class LRUCache:
         del self.hash[self.tail.prev.key]
         self.removeNode(self.tail.prev)
         
-        
-
-
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
 # param_1 = obj.get(key)

@@ -1,9 +1,6 @@
 #Leetcode 678. Valid Parenthesis String
 
-
-#Solution1
-
-class Solution:
+class Solution1:
     def checkValidString(self, s: str) -> bool:
         if len(s) == 0 or s== "*":
             return True
@@ -31,9 +28,7 @@ class Solution:
         return True
 
 
-#Solution2 - Greedy Approach
-
-class Solution:
+class Solution2:
     def checkValidString(self, s: str) -> bool:
         if len(s) == 0:
             return True
@@ -47,9 +42,8 @@ class Solution:
     
         return True
 
-#Solution3 - using 2 stacks
 
-class Solution:
+class Solution3:
     def checkValidString(self, s: str) -> bool:
         stack1 = []
         stack2 = []
@@ -72,5 +66,3 @@ class Solution:
             else:
                 break
         return len(stack1) == 0
-            
-
