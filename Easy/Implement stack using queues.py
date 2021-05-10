@@ -1,7 +1,7 @@
 #Leetcode 225. Implement Stack using Queues
 
 #Solution 1
-# from collections import deque
+from collections import deque
 class MyStack:
 
     def __init__(self):
@@ -9,7 +9,6 @@ class MyStack:
         Initialize your data structure here.
         """
         self.queue = deque()
-        
 
     def push(self, x: int) -> None:
         """
@@ -19,28 +18,23 @@ class MyStack:
         for _ in range(len(self.queue)-1):
             self.queue.append(self.queue.popleft())
         
-
     def pop(self) -> int:
         """
         Removes the element on top of the stack and returns that element.
         """
         return self.queue.popleft()
         
-
     def top(self) -> int:
         """
         Get the top element.
         """
         return self.queue[0]
         
-
     def empty(self) -> bool:
         """
         Returns whether the stack is empty.
         """
         return not self.queue
-        
-
 
 # Your MyStack object will be instantiated and called as such:
 # obj = MyStack()
@@ -48,6 +42,7 @@ class MyStack:
 # param_2 = obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.empty()
+
 
 #Solution 2
 from collections import deque
@@ -57,8 +52,7 @@ class MyStack:
         """
         Initialize your data structure here.
         """
-        self.q = deque()
-        
+        self.q = deque()       
 
     def push(self, x: int) -> None:
         """
@@ -68,13 +62,11 @@ class MyStack:
         tmp.extend(self.q)
         self.q = tmp
         
-
     def pop(self) -> int:
         """
         Removes the element on top of the stack and returns that element.
         """
-        return self.q.popleft()
-        
+        return self.q.popleft()    
 
     def top(self) -> int:
         """
@@ -82,14 +74,11 @@ class MyStack:
         """
         return self.q[0]
         
-
     def empty(self) -> bool:
         """
         Returns whether the stack is empty.
         """
-        return len(self.q) == 0
-        
-
+        return len(self.q) == 0       
 
 # Your MyStack object will be instantiated and called as such:
 # obj = MyStack()
