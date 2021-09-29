@@ -45,24 +45,33 @@ class Solution2:
 
 class Solution3:
     def checkValidString(self, s: str) -> bool:
-        stack1 = []
-        stack2 = []
-        for index, value in enumerate(s):
-            if value == "(":
-                stack1.append(index)
-            elif value == "*":
-                stack2.append(index)
+        class Solution:
+    def checkValidString(self, s: str) -> bool:
+        if len(s) == 0:
+            return True
+        
+        opn = []
+        star = []
+        
+        for i in range(len(s)):
+            if s[i] == "(":
+                opn.append(i)
+            elif s[i] == "*":
+                star.append(i)
             else:
-                if len(stack1) >0:
-                    stack1.pop()
-                elif len(stack2) > 0:
-                    stack2.pop()
+                if len(opn) != 0:
+                    opn.pop()
+                elif len(star) != 0:
+                    star.pop()
                 else:
                     return False
-        while stack1 and stack2:
-            if stack1[-1] < stack2[-1]:
-                stack1.pop()
-                stack2.pop()
+                
+        while opn:
+            if len(star) == 0:
+                return False
+            elif opn[-1] < star[-1]:
+                opn.pop()
+                star.pop()
             else:
-                break
-        return len(stack1) == 0
+                return False
+        return True

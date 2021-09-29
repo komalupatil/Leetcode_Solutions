@@ -26,3 +26,25 @@ class Solution3:
           x /= 2
           y /= 2
         return ans
+
+class Solution4:
+    def hammingDistance(self, x: int, y: int) -> int:
+        diff = x ^ y
+        dist = 0
+        
+        while diff != 0:
+            diff &= diff-1
+            dist += 1
+        return dist
+
+# Ref: https://www.techiedelight.com/brian-kernighans-algorithm-count-set-bits-integer/
+
+class Solution5:
+    def hammingDistance(self, x: int, y: int) -> int:
+        diff = x ^ y
+        dist = 0
+        
+        while diff != 0:
+            dist += diff & 1
+            diff = diff >> 1
+        return dist
