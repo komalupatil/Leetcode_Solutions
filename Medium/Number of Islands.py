@@ -1,8 +1,6 @@
 #Leetcode 200. Number of Islands
 #https://yangshun.github.io/tech-interview-handbook/algorithms/graph/
 
-#Solution 
-
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         if len(grid) == 0:
