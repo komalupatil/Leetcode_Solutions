@@ -42,11 +42,11 @@ class Solution2:
         # make dict of existing roman to integer values
         symbols = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
-        # if length of given string is 1 then just return its equivalent integer value from dict
+        # if length of given string is 1 then just return it's equivalent integer value from dict
         if len(s) == 1:
             return symbols[s[0]]
         
-        # if len of string is 0 rthen return 0
+        # if len of string is 0 then return 0
         if len(s) == 0:
             return 0
         
@@ -56,7 +56,7 @@ class Solution2:
             current_char = symbols[s[i]]
             next_char = 0
 
-            # check if index goes out of range before checking next element
+            # check if index goes out of range before checking next character
             if i+1 < len(s):
                 next_char = symbols[s[i+1]]
 
